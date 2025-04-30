@@ -122,3 +122,8 @@ Next Steps;
      - Then you go to terminal and type ==> 'pip install - requirements.txt' to automatically install all at once with one simple click
      - Then ==> 'pip list' to confirm they've all been installed
 '''
+'''
+Created:
+PageObjects Package: Must consists of Locators (Pointing to specific elements), Constructors, and Methods
+    1. HopmePage.py ==> consists of multiple elements
+'''
