@@ -35,15 +35,16 @@ class AccountRegistrationPage():
         self.driver.find_element(By.NAME, self.txt_confpassword_name).send_keys(cnfpwd)
 
     def setPrivacyPolicy(self):
-        self.driver.find_element(By.NAME, self.chk_policy_name).clcik()
+        self.driver.find_element(By.NAME, self.chk_policy_name).click()
 
     def clickContinue(self):
-        self.driver.find_element(By.XPATH, self.btn_cont_xpath).clcik()
+        self.driver.find_element(By.XPATH, self.btn_cont_xpath).click()
 
-    def getconfirmationmsg(self):
+    def getconfirmationmsg(self): # unstalling variables in the confirmation message test case
+        ...
         try:
-            return self.driver.find_element(By.XPATH, self.text_msg_conf_xpath).text
+            return self.driver.find_element(By.XPATH, "/html/body/div[2]/div/div/h1").text
         except:
-            None
+            return None
 
 

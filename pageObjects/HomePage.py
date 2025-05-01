@@ -16,7 +16,7 @@ class HomePage:
         self.driver.find_element(By.XPATH,self.lnk_myaccount_xpath).click() # locator declared earlier in class
 
     def clickRegister(self):
-        self.driver.find_element(By.XPATH,self.lnk_register_linktext).click()
+        self.driver.find_element(By.LINK_TEXT,self.lnk_register_linktext).click()
 
     def clickLogin(self):
-        self.driver.find_element(By.XPATH,self.lnk_login_linktext).clcik()
+        self.driver.find_element(By.LINK_TEXT,self.lnk_login_linktext).clcik()

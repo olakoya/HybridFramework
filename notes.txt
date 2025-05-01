@@ -127,3 +127,5 @@ Created:
 PageObjects Package: Must consists of Locators (Pointing to specific elements), Constructors, and Methods
     1. HopmePage.py ==> consists of multiple elements
 '''
+
+Execution Code: pytest -s -v testCases/test_001_AccountRegistration.py
