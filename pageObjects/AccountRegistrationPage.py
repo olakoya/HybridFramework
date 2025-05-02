@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 
+
 class AccountRegistrationPage():
     # Locators
     txt_firstname_name = "firstname"
@@ -40,10 +41,9 @@ class AccountRegistrationPage():
     def clickContinue(self):
         self.driver.find_element(By.XPATH, self.btn_cont_xpath).click()
 
-    def getconfirmationmsg(self): # unstalling variables in the confirmation message test case
-        ...
+    def getconfirmationmsg(self): # installing variables in the confirmation message test case
         try:
-            return self.driver.find_element(By.XPATH, "/html/body/div[2]/div/div/h1").text
+            return self.driver.find_element(By.CSS_SELECTOR, "div#content h1").text # XPath: /html/body/div[2]/div/div/h1
         except:
             return None
 
