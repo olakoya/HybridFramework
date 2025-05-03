@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
-
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 class AccountRegistrationPage():
     # Locators
@@ -43,8 +44,22 @@ class AccountRegistrationPage():
 
     def getconfirmationmsg(self): # installing variables in the confirmation message test case
         try:
-            return self.driver.find_element(By.CSS_SELECTOR, "div#content h1").text # XPath: /html/body/div[2]/div/div/h1
-        except:
-            return None
+            message = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, "#content h1"))
+            )
+            return message.text
+        except Exception as e:
+            print("Could not get confirmation message:", e)
+            return ""
+        # try:
+        #     WebDriverWait(self.driver, 10).until(
+        #         EC.text_to_be_present_in_element((By.TAG_NAME, "h1"), "Your Account Has Been Created!")
+        #     )
+        #     return element.text
+        # except Exception as e:
+        #     print(f"Could not get confirmation message: {e}")
+        #     return ""
+
+
 
 
