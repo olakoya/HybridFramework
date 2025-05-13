@@ -1,7 +1,7 @@
 import os # specifying log file ie location of the log file dynamically
 import logging
 
-from pkg_resources import file_ns_handler
+# from pkg_resources import file_ns_handler
 
 
 class LogGen:

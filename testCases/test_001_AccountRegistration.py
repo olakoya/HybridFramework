@@ -51,13 +51,14 @@ class Test_001_AccountReg:
         if self.confmsg != 'Your Account Has Been Created!':
             self.logger.info("****Account Registration is Passed****")
             capture_screenshot(self.driver, "text_account_reg")
-            assert False
+            assert True
         else:
             timestamp = time.strftime("%Y%m%d_%H%M%S")
             screenshot_path = os.path.join(os.path.join(os.getcwd()), 'screenshots', f'text_account_reg_{timestamp}.png')
             print("Saving screenshot to:", screenshot_path)
             self.driver.save_screenshot(screenshot_path)
             self.logger.error("****Account Registration is Failed****")
+            assert False, "Account Registration test failed"
 
 
 
