@@ -135,3 +135,18 @@ Screenshot pathway:
 Import os
 
 os.path.dirname(os.getcwd())+”\screenshots\\”+text_account_reg.png”
+
+Importance of Logging
+----------------------
+1. Every application keeps a log file.
+2. All actions performed in the application are recorded in this log file.
+3. By looking at the log file, we can understand what the user is doing, especially in banking and financial apps.
+4. When a bug occurs, it gets logged in the file. We can send this log file to the developer, who can analyze it to identify
+the issue.
+5. In automation frameworks, logs are important because we often run many test cases at once. While we work on other tasks,
+the log file helps us track the status of these tests (like warnings, failures, or passes). This way, we can see what each
+automated test case is doing.
+
+6. levels of logs
+-------------------
+Warn>Debug>info>error>fatal
