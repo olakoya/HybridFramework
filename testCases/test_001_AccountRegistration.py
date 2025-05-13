@@ -5,17 +5,22 @@ from pageObjects.AccountRegistrationPage import AccountRegistrationPage
 from utilities import randomString
 from utilities.utils import capture_screenshot
 from utilities.readProperties import ReadConfig
+from utilities.customLogger import LogGen
 
 class Test_001_AccountReg:
     baseURL = "https://tutorialsninja.com/demo/index.php?route=common/home"
+    logger = LogGen.loggen() # Creating a class variable for LogGen
 
     def test_account_reg(self, setup):
+        self.logger.info("****test_001_AccountRegistration started****")
         self.driver = setup # Setting up for instant variable
         self.driver.implicitly_wait(10)
         self.driver.get(self.baseURL)
+        self.logger.info("****Launching Application****")
         self.driver.maximize_window()
 
         self.hp = HomePage(self.driver)
+        self.logger.info("****Click on MyAccount ==> Register****")
         self.hp.clickMyAccount()
         self.hp.clickRegister()
 
@@ -44,6 +49,7 @@ class Test_001_AccountReg:
 
         #  This will take screenshot regardless of test result
         if self.confmsg != 'Your Account Has Been Created!':
+            self.logger.info("****Account Registration is Passed****")
             capture_screenshot(self.driver, "text_account_reg")
             assert False
         else:
@@ -51,6 +57,7 @@ class Test_001_AccountReg:
             screenshot_path = os.path.join(os.path.join(os.getcwd()), 'screenshots', f'text_account_reg_{timestamp}.png')
             print("Saving screenshot to:", screenshot_path)
             self.driver.save_screenshot(screenshot_path)
+            self.logger.error("****Account Registration is Failed****")
 
 
 

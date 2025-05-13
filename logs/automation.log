@@ -1,0 +1,19 @@
+05/13/2025 08:54:32 PM: INFO: ****test_001_AccountRegistration started****
+05/13/2025 08:54:34 PM: INFO: ****Launching Application****
+05/13/2025 08:54:34 PM: INFO: ****Click on MyAccount ==> Register****
+05/13/2025 08:54:40 PM: ERROR: ****Account Registration is Failed****
+
+'''
+Output after adding Log module and above log report:
+
+PASSED
+
+========================================================================== warnings summary ===========================================================================
+utilities/customLogger.py:4
+  /Users/olakoya/Desktop/PythonProject/HybridFramework/utilities/customLogger.py:4: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    from pkg_resources import file_ns_handler
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================================================== 1 passed, 1 warning in 13.76s ====================================================================
+(.venv) olakoya@MacBookPro HybridFramework %
+'''
