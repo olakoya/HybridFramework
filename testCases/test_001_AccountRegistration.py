@@ -48,7 +48,7 @@ class Test_001_AccountReg:
         print("Actual confirmation message:", repr(self.confmsg))
 
         #  This will take screenshot regardless of test result
-        if self.confmsg != 'Your Account Has Been Created!':
+        if self.confmsg == 'Your Account Has Been Created!':
             self.logger.info("****Account Registration is Passed****")
             capture_screenshot(self.driver, "text_account_reg")
             assert True
