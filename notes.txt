@@ -150,3 +150,13 @@ automated test case is doing.
 6. levels of logs
 -------------------
 Warn>Debug>info>error>fatal
+
+How to open Report in a browser?
+---------------------------------
+- Right click the displayed automatic output 'name' inside the 'reports' folder after running the code
+- Click on 'Open in'
+- Click on 'Browser'
+- Then Click on preferred browser to display the report
+- Then date and time stamp would display on the opened report in browser
+- After opening on the browser and you click on the 'Test' the full captured log call will display
+- And if one did a multiple Test Cases, it will display under the 'Test' Column

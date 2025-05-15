@@ -53,7 +53,7 @@ def pytest_metadata(metadata): # For modifying hook is required above
     metadata.pop("Plugins", None)
 
 # Specifying report folder location and save report with timestamp
-@pytest.hookimpl(tryfirst=True)
+@pytest.hookimpl(tryfirst=True) # Using hook for one configuration which is used from the scratch to generate this report dynamically and it's automatically executed
 def pytest_configure(config):
     config.option.htmlpath = (os.path.dirname(os.getcwd()) + "//HybridFramework//reports//"+datetime.now().strftime("%d-%m-%Y %H-%M-%S")+".html")
     # Your existing code
