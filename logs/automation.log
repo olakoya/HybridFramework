@@ -217,3 +217,29 @@ testCases/test_001_AccountRegistration.py::Test_001_AccountReg::test_account_reg
 ========================================================================= 1 passed in 11.29s ==========================================================================
 (.venv) olakoya@MacBookPro HybridFramework %
 '''
+05/16/2025 08:31:49 PM: INFO: ****test_001_AccountRegistration started****
+05/16/2025 08:31:51 PM: INFO: ****Launching Application****
+05/16/2025 08:31:52 PM: INFO: ****Click on MyAccount ==> Register****
+05/16/2025 08:31:58 PM: INFO: ****Account Registration is Passed****
+
+'''
+Output for Safari browser
+
+(.venv) olakoya@MacBookPro HybridFramework % pytest -s -v -n=3 --browser safari testCases/test_001_AccountRegistration.py
+====================================================================== test session starts =======================================================================
+platform darwin -- Python 3.9.6, pytest-8.3.5, pluggy-1.5.0 -- /Users/olakoya/Desktop/PythonProject/HybridFramework/.venv/bin/python
+cachedir: .pytest_cache
+metadata: {'Platform': 'macOS-10.16-x86_64-i386-64bit', 'Packages': {'pytest': '8.3.5', 'pluggy': '1.5.0'}}
+rootdir: /Users/olakoya/Desktop/PythonProject/HybridFramework
+plugins: html-4.1.1, metadata-3.1.1, xdist-3.6.1
+3 workers [1 item]
+scheduling tests via LoadScheduling
+
+testCases/test_001_AccountRegistration.py::Test_001_AccountReg::test_account_reg
+[gw0] PASSED testCases/test_001_AccountRegistration.py::Test_001_AccountReg::test_account_reg
+
+--------------------- Generated html report: file:///Users/olakoya/Desktop/PythonProject/HybridFramework/reports/16-05-2025%2020-31-38.html ----------------------
+======================================================================= 1 passed in 20.05s =======================================================================
+(.venv) olakoya@MacBookPro HybridFramework %
+
+'''
