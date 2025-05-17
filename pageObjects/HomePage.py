@@ -19,4 +19,4 @@ class HomePage:
         self.driver.find_element(By.LINK_TEXT,self.lnk_register_linktext).click()
 
     def clickLogin(self):
-        self.driver.find_element(By.LINK_TEXT,self.lnk_login_linktext).clcik()
+        self.driver.find_element(By.LINK_TEXT,self.lnk_login_linktext).click()

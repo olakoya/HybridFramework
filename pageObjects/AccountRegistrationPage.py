@@ -14,7 +14,7 @@ class AccountRegistrationPage():
     btn_cont_xpath="//input[@value='Continue']"
     text_msg_conf_xpath = "//h1[normalise-space()='Your Account Has Benn Created!']"
 
-    # Constructor
+    # Constructor and Action Method
     def __init__(self,driver): # constructor has a 'driver' variable
         self.driver = driver
 
