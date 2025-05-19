@@ -22,17 +22,13 @@ class Test_login():
         self.hp.clickLogin()
 
         self.lp = LoginPage(self.driver) # Landing on the Login Page lp which is an object of the loginpage
-        self.lp.setEmail(self.user)
+        self.lp.setEmail(self.user) # Calling and passing data from the email and password with the help of statics method in utilities
         self.lp.setPassword(self.password)
-        self.lp.clickLogin()
-        self.targetpage=self.lp.isMyAccountPageExists()
-        if self.targetpage==True:
+        self.lp.clickLogin() # Calling some actions
+        self.targetpage=self.lp.isMyAccountPageExists() # A TC must receive a valuation
+        if self.targetpage==True:  # Returning true boolean value & Every TC will pass
             assert True
         else:
-            # self.driver.save_screenshot(os.path.abspath(os.getcwd())+"//screenshots//"+"test_account_log.png")
-            print("Login failed. Current page:", self.driver.current_url)
-            print("Page title:", self.driver.title)
-            self.driver.save_screenshot("screenshots/test_account_log.png")
-            # assert False
-            assert self.targetpage, "Login failed: My Account page not found"
+            self.driver.save_screenshot(os.path.abspath(os.getcwd())+"//screenshots//"+"test_account_log.png")
+            assert False # Every TC will pass until put assertion
             self.logger.info("****End of test_002_login****")

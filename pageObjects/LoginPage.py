@@ -1,7 +1,7 @@
 
 from selenium.webdriver.common.by import By
 
-class LoginPage():
+class LoginPage(): # Creating an Object of Login Page Class
     # Locators
     txt_email_xpath = "//input[@id='input-email']"
     txt_password_xpath = "//input[@id='input-password']"

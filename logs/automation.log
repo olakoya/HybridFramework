@@ -251,3 +251,27 @@ testCases/test_001_AccountRegistration.py::Test_001_AccountReg::test_account_reg
 05/17/2025 08:50:08 PM: INFO: ****Starting test_002_login****
 05/17/2025 08:57:06 PM: INFO: ****Starting test_002_login****
 05/17/2025 08:57:51 PM: INFO: ****Starting test_002_login****
+
+
+
+05/19/2025 07:28:37 PM: INFO: ****Starting test_002_login****
+05/19/2025 07:30:27 PM: INFO: ****Starting test_002_login****
+05/19/2025 07:33:18 PM: INFO: ****Starting test_002_login****
+'''
+(.venv) olakoya@MacBookPro HybridFramework % pytest -s -v --browser chrome testCases/test_002_Login.py
+====================================================================== test session starts =======================================================================
+platform darwin -- Python 3.9.6, pytest-8.3.5, pluggy-1.5.0 -- /Users/olakoya/Desktop/PythonProject/HybridFramework/.venv/bin/python
+cachedir: .pytest_cache
+metadata: {'Platform': 'macOS-10.16-x86_64-i386-64bit', 'Packages': {'pytest': '8.3.5', 'pluggy': '1.5.0'}}
+rootdir: /Users/olakoya/Desktop/PythonProject/HybridFramework
+plugins: html-4.1.1, metadata-3.1.1, xdist-3.6.1
+collected 1 item
+
+testCases/test_002_Login.py::Test_login::test_login Launching Chrome Browser.........
+PASSED
+
+--------------------- Generated html report: file:///Users/olakoya/Desktop/PythonProject/HybridFramework/reports/19-05-2025%2019-33-16.html ----------------------
+======================================================================= 1 passed in 6.11s ========================================================================
+(.venv) olakoya@MacBookPro HybridFramework %
+
+'''
