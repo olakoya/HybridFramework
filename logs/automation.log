@@ -275,3 +275,39 @@ PASSED
 (.venv) olakoya@MacBookPro HybridFramework %
 
 '''
+05/20/2025 06:07:13 PM: INFO: ****test_001_AccountRegistration started****
+05/20/2025 06:07:13 PM: INFO: ****test_001_AccountRegistration started****
+05/20/2025 06:07:15 PM: INFO: ****Launching Application****
+05/20/2025 06:07:15 PM: INFO: ****Launching Application****
+05/20/2025 06:07:15 PM: INFO: ****Click on MyAccount ==> Register****
+05/20/2025 06:07:15 PM: INFO: ****Click on MyAccount ==> Register****
+05/20/2025 06:07:20 PM: INFO: ****Account Registration is Passed****
+05/20/2025 06:07:20 PM: INFO: ****Account Registration is Passed****
+05/20/2025 06:07:22 PM: INFO: ****Starting test_002_login****
+05/20/2025 06:07:22 PM: INFO: ****Starting test_002_login****
+
+'''
+(.venv) olakoya@MacBookPro HybridFramework % pytest -s -v --browser chrome testCases/
+====================================================================== test session starts =======================================================================
+platform darwin -- Python 3.9.6, pytest-8.3.5, pluggy-1.5.0 -- /Users/olakoya/Desktop/PythonProject/HybridFramework/.venv/bin/python
+cachedir: .pytest_cache
+metadata: {'Platform': 'macOS-10.16-x86_64-i386-64bit', 'Packages': {'pytest': '8.3.5', 'pluggy': '1.5.0'}}
+rootdir: /Users/olakoya/Desktop/PythonProject/HybridFramework
+plugins: html-4.1.1, metadata-3.1.1, xdist-3.6.1
+collected 2 items
+
+testCases/test_001_AccountRegistration.py::Test_001_AccountReg::test_account_reg Launching Chrome Browser.........
+Used email: svhe4dlz@gmail.com
+Clicked Continue button
+Current URL after registration: https://tutorialsninja.com/demo/index.php?route=account/success
+Actual confirmation message: 'Your Account Has Been Created!'
+Screenshot saved to: /Users/olakoya/Desktop/PythonProject/HybridFramework/screenshots/text_account_reg_20250520_180720.png
+PASSED
+testCases/test_002_Login.py::Test_login::test_login Launching Chrome Browser.........
+PASSED
+
+--------------------- Generated html report: file:///Users/olakoya/Desktop/PythonProject/HybridFramework/reports/20-05-2025%2018-07-10.html ----------------------
+======================================================================= 2 passed in 17.23s =======================================================================
+(.venv) olakoya@MacBookPro HybridFramework %
+
+'''

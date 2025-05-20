@@ -177,5 +177,4 @@ Email: abcxyz@example.com
 password: abcxyz
 
 
-Email: testtesting12345@gmail.com
-password: testtesting12345
+Code to use when testing all the Test Cases in the Test Cases Package is =>  pytest -s -v --browser chrome testCases/
