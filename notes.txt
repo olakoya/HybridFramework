@@ -177,4 +177,11 @@ Email: abcxyz@example.com
 password: abcxyz
 
 
+Code to Run TCs located in the TC Package
+------------------------------------------
 Code to use when testing all the Test Cases in the Test Cases Package is =>  pytest -s -v --browser chrome testCases/
+
+NB:
+---
+- One should never add code or any test data in the Page Object Class
+- It should be pass in the Test Cases files
