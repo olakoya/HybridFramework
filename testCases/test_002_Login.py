@@ -31,4 +31,4 @@ class Test_login():
         else:
             self.driver.save_screenshot(os.path.abspath(os.getcwd())+"//screenshots//"+"test_account_log.png")
             assert False # Every TC will pass until put assertion
-            self.logger.info("****End of test_002_login****")
+        self.logger.info("****End of test_002_login****")

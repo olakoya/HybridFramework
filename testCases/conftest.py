@@ -5,30 +5,29 @@ from numpy.f2py.rules import options
 from selenium import webdriver
 from datetime import datetime
 
-# @pytest.fixture()
-# def setup(): # Passing fixture function
-#     options = webdriver.ChromeOptions()
-#     options.add_experimental_option("detach", True)
-#     driver = webdriver.Chrome(options=options)
-#     yield driver
-#     driver.quit()
-
 @pytest.fixture()
 def setup(browser): # Passing fixture function
+
         if browser == 'edge':
             options = webdriver.EdgeOptions()
             options.add_experimental_option("detach", True)
             driver = webdriver.Edge(options=options)
+            driver.maximize_window()
             print("Launching Edge Browser.........")
+
         elif browser == 'firefox':
             options = webdriver.FirefoxOptions()
             driver = webdriver.Firefox(options=options)
+            driver.maximize_window()
             print("Launching Firefox Browser.........")
+
         else:
             options = webdriver.ChromeOptions()
             options.add_experimental_option("detach", True)
+            options.add_argument("--start-maximized")
             driver = webdriver.Chrome(options=options)
             print("Launching Chrome Browser.........")
+
         yield driver
         driver.quit()
 

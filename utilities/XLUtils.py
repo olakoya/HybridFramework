@@ -9,7 +9,7 @@ def getColumnCount(file,sheetName):
     workbook = openpyxl.load_workbook(file)
     sheet = workbook[sheetName]
     return (sheet.max_row)
-def readData(file,sheetName,rownum,columnno,data):
+def readData(file,sheetName,rownum,columnno):
     workbook = openpyxl.load_workbook(file)
     sheet = workbook[sheetName]
     return sheet.cell(rownum, columnno).value
