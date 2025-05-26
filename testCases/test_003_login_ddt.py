@@ -1,4 +1,7 @@
 import os
+
+import pytest
+import time
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -16,6 +19,9 @@ class Test_Login_DDT:
     logger = LogGen.loggen()
     path = os.path.abspath(os.curdir) + "//testData//Opencart_LoginData.xlsx"
 
+    @pytest.mark.smoke
+    @pytest.mark.regression
+    @pytest.mark.sanity
     def test_login_ddt(self, setup):
         self.logger.info("**** Starting Data Driven Test Case for Login ****")
         self.rows = XLUtils.getRowCount(self.path, 'Sheet 1')
@@ -25,26 +31,52 @@ class Test_Login_DDT:
         self.driver.maximize_window()
         self.driver.implicitly_wait(10)
 
+        self.logger.info(f"Current URL after load: {self.driver.current_url}")
+        self.logger.info(f"Page Title after load: {self.driver.title}")
+
         self.hp = HomePage(self.driver)
         self.lp = LoginPage(self.driver)
         self.ma = MyAccountPage(self.driver)
 
         for r in range(2, self.rows + 1):
             self.logger.info(f"---------- Row {r} ----------")
-            self.hp.clickMyAccount()
-
-            # Wait for Login link
-            WebDriverWait(self.driver, 10).until(
-                EC.element_to_be_clickable((By.LINK_TEXT, "Login"))
-            )
-            self.hp.clickLogin()
-            WebDriverWait(self.driver, 10).until(
-                EC.visibility_of_element_located((By.ID, "input-email"))
-            )
 
             email = XLUtils.readData(self.path, "Sheet 1", r, 1)
             password = XLUtils.readData(self.path, "Sheet 1", r, 2)
             expected_result = XLUtils.readData(self.path, "Sheet 1", r, 3)
+
+            if not email or not password or not expected_result:
+                self.logger.warning(
+                    f"Row {r} skipped due to missing data: email={email}, password={password}, expected={expected_result}")
+                continue
+
+            self.logger.info("Clicking on 'My Account'...")
+            self.hp.clickMyAccount()
+            time.sleep(2)  # Let dropdown/menu render
+
+            try:
+                WebDriverWait(self.driver, 10).until(
+                    EC.presence_of_element_located((By.LINK_TEXT, "Login"))
+                )
+                login_link = self.driver.find_element(By.LINK_TEXT, "Login")
+                self.driver.execute_script("arguments[0].scrollIntoView(true);", login_link)
+                login_link.click()
+                self.logger.info("Login link clicked successfully.")
+            except Exception as e:
+                self.logger.error(f"Failed to click 'Login' link: {e}")
+                self.driver.save_screenshot(f"screenshots/login_link_failure_row{r}.png")
+                lst_status.append("Fail")
+                continue
+
+            try:
+                WebDriverWait(self.driver, 10).until(
+                    EC.visibility_of_element_located((By.ID, "input-email"))
+                )
+            except Exception as e:
+                self.logger.error(f"Email input not visible for row {r}: {e}")
+                self.driver.save_screenshot(f"screenshots/email_input_failure_row{r}.png")
+                lst_status.append("Fail")
+                continue
 
             self.logger.info(f"Testing with Email: {email}, Password: {password}, Expected: {expected_result}")
 
@@ -52,7 +84,6 @@ class Test_Login_DDT:
             self.lp.setPassword(password)
             self.lp.clickLogin()
 
-            # Wait for possible login redirect
             WebDriverWait(self.driver, 10).until(lambda d: d.execute_script("return document.readyState") == "complete")
 
             actual_result = self.lp.isMyAccountPageExists()
@@ -76,7 +107,6 @@ class Test_Login_DDT:
                     self.logger.info("Login failed as expected (Invalid)")
                     lst_status.append("Pass")
 
-        # Final assertion and logging
         if "Fail" not in lst_status:
             self.logger.info("All data-driven login tests passed.")
             assert True
@@ -87,66 +117,24 @@ class Test_Login_DDT:
         self.logger.info("******* End of test_003_login_ddt *******")
 
 
+'''
+Output is 
+(.venv) olakoya@MacBookPro HybridFramework % pytest -s -v --browser chrome testCases/test_003_login_ddt.py
 
-# from selenium.webdriver.support.ui import WebDriverWait
-# from selenium.webdriver.support import expected_conditions as EC
-# from pageObjects.HomePage import HomePage
-# from pageObjects.LoginPage import LoginPage
-# from utilities.readProperties import ReadConfig
-# from utilities.customLogger import LogGen
-# from pageObjects.MyAccountPage import MyAccountPage
-# from utilities import XLUtils
-# import os
-#
-# class Test_Login_DDT:
-#     baseURL = ReadConfig.getApplicationURL()  # Getting static methods in config class
-#     logger = LogGen.loggen() # Logger
-#     path = os.path.abspath(os.curdir)+"//testData//Opencart_LoginData.xlsx"
-#
-#     def test_login_ddt(self,setup): # setup contains setup method
-#         self.logger.info("****Starting of Data Driven Test Case****")
-#         self.rows = XLUtils.getRowCount(self.path,'Sheet 1')
-#         lst_status = []
-#         self.driver = setup  # this method will return driver variable
-#         self.driver.get(self.baseURL)
-#         self.driver.maximize_window()
-#         self.driver.implicitly_wait(10)
-#         self.hp = HomePage(self.driver)
-#         self.lp = LoginPage(self.driver)
-#         self.ma = MyAccountPage(self.driver)
-#
-#         for r in range(2,self.rows+1):
-#             # Performing Click Action
-#             self.hp.clickMyAccount()
-#             WebDriverWait(self.driver, 10).until(
-#                 EC.element_to_be_clickable((By.LINK_TEXT, "Login"))
-#             )
-#
-#             self.hp.clickLogin()
-#             self.email = XLUtils.readData(self.path,"Sheet 1",r,1)
-#             self.password = XLUtils.readData(self.path,"Sheet 1",r,2)
-#             self.exp = XLUtils.readData(self.path,"Sheet 1",r,3)
-#             self.lp.setEmail(self.email) # Passing data
-#             self.lp.setPassword(self.password)
-#             self.lp.clickLogin()
-#             self.targetpage = self.lp.isMyAccountPageExists()
-#
-#             # Important Condition
-#             if self.exp == 'Valid':
-#                 if self.targetpage == True:
-#                     lst_status.append("Pass")
-#                     self.ma.clickLogout()
-#                 else:
-#                     lst_status.append("Fail")
-#             elif self.exp == 'Invalid':
-#                 if self.targetpage == True:
-#                     lst_status.append('Fail')
-#                     self.ma.clickLogout()
-#                 else:
-#                     lst_status.append('Pass')
-#         # Final Validation
-#         if "Fail" not in lst_status:
-#             assert True
-#         else:
-#             assert False
-#         self.logger.info("******* End of test_003_login_Datadriven *******")
+========================================================================= test session starts =========================================================================
+platform darwin -- Python 3.9.6, pytest-8.3.5, pluggy-1.5.0 -- /Users/olakoya/Desktop/PythonProject/HybridFramework/.venv/bin/python
+cachedir: .pytest_cache
+metadata: {'Platform': 'macOS-10.16-x86_64-i386-64bit', 'Packages': {'pytest': '8.3.5', 'pluggy': '1.5.0'}}
+rootdir: /Users/olakoya/Desktop/PythonProject/HybridFramework/testCases
+configfile: pytest.ini
+plugins: html-4.1.1, metadata-3.1.1, xdist-3.6.1
+collected 1 item                                                                                                                                                      
+
+testCases/test_003_login_ddt.py::Test_Login_DDT::test_login_ddt Launching Chrome Browser.........
+PASSED
+
+------------------------ Generated html report: file:///Users/olakoya/Desktop/PythonProject/HybridFramework/reports/26-05-2025%2020-25-46.html ------------------------
+========================================================================= 1 passed in 52.57s ==========================================================================
+(.venv) olakoya@MacBookPro HybridFramework % 
+
+'''

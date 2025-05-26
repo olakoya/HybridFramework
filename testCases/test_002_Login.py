@@ -1,3 +1,5 @@
+import pytest
+
 from pageObjects.HomePage import HomePage
 from pageObjects.LoginPage import LoginPage
 from utilities.readProperties import ReadConfig
@@ -9,6 +11,7 @@ class Test_login():
     logger = LogGen.loggen() # Class variable in Test Login
     user = ReadConfig.getUseremail()
     password = ReadConfig.getPassword() # Specific method get Password
+    @pytest.mark.sanity
 
     def test_login(self,setup):
         self.logger.info("****Starting test_002_login****")

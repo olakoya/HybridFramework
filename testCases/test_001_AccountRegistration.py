@@ -1,5 +1,8 @@
 import os
 import time
+
+import pytest
+
 from pageObjects.HomePage import HomePage
 from pageObjects.AccountRegistrationPage import AccountRegistrationPage
 from utilities import randomString
@@ -10,6 +13,7 @@ from utilities.customLogger import LogGen
 class Test_001_AccountReg:
     baseURL = "https://tutorialsninja.com/demo/index.php?route=common/home"
     logger = LogGen.loggen() # Creating a class variable for LogGen
+    @pytest.mark.regression
 
     def test_account_reg(self, setup):
         self.logger.info("****test_001_AccountRegistration started****")

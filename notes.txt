@@ -185,3 +185,9 @@ NB:
 ---
 - One should never add code or any test data in the Page Object Class
 - It should be pass in the Test Cases files
+
+To Run Different Types of Testing or Group Run, Codes to use in Terminal;
+------------------------------------------------------------
+1. pytest -s -v -m "sanity" --browser chrome testCases
+2. pytest -s -v -m "sanity and regression and smoke" --browser chrome testCases
+3. pytest -s -v -m "sanity or regression" --browser chrome testCases
