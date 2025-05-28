@@ -217,11 +217,5 @@ STEPS FOR CODES REPOSITORY
 
 Note
 ----
-At the very beginning when it's time to push to GitHub, user needs to ask for authentication accordingly by choosing Token
-
-***REMOVED***
-
-Master is the branch where working code is avalaible
-
-Another is branch
+At the very beginning when it's time to push to GitHub, user needs to ask for authentication accordingly;
 
