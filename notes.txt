@@ -214,8 +214,3 @@ STEPS FOR CODES REPOSITORY
 ---------------------------
 1. GitHub Link: https://github.com/olakoya/HybridFramework.git
 2. git remote add origin "https://github.com/olakoya/HybridFramework.git"
-
-Note
-----
-At the very beginning when it's time to push to GitHub, user needs to ask for authentication accordingly;
-
