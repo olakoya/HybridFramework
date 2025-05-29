@@ -214,3 +214,17 @@ STEPS FOR CODES REPOSITORY
 ---------------------------
 1. GitHub Link: https://github.com/olakoya/HybridFramework.git
 2. git remote add origin "https://github.com/olakoya/HybridFramework.git"
+
+Running Test in Command Prompt and run.bat file
+------------------------------------------------
+1. Creating Requirements.bat file contains packages like:
+Pip install pytest
+Pip install selenium
+Pip install pytest-html
+Pip install pytest-xdist
+Pip install pytest-ordering
+Pip install openpyxl
+Pip install allure-pytest
+
+2. For run.bat file contains:
+pytest -s -v -m "sanity" --browser chrome testCases
