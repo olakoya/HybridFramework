@@ -192,6 +192,9 @@ To Run Different Types of Testing or Group Run, Codes to use in Terminal;
 2. pytest -s -v -m "sanity and regression and smoke" --browser chrome testCases
 3. pytest -s -v -m "sanity or regression" --browser chrome testCases
 
+    test_001_AccountRegistration.py is ==> Regression Testing
+    test_002_Login.py is ==> Sanity Testing
+    test_003_login_ddt.py ==> Smoke and, can be the combination of the 3 types of testing
 
 Selenium Hydrid Framework - 5
 -----------------------------
