@@ -231,3 +231,9 @@ Pip install allure-pytest
 
 2. For run.bat file contains:
 pytest -s -v -m "sanity" --browser chrome testCases
+
+Master is the branch where working code is available
+
+Another branch will be created when an amendment is made and when a Code Review is required
+
+And that's when a Main branch is changed to Master branch
