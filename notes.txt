@@ -237,3 +237,32 @@ Master is the branch where working code is available
 Another branch will be created when an amendment is made and when a Code Review is required
 
 And that's when a Main branch is changed to Master branch
+
+Selenium Hydrid Framework - 6
+-----------------------------
+1. Build ==> Test ==> This is Continuous Integration CI done by Developer and Tester
+2. Package ==> Deploy ==> This is Continuous Delivery done CD by DevOps after approval
+
+Above are each stage of tasks
+
+To Install Jenkins:
+-------------------
+Jenkins is a Java Based application ==> Java installed
+
+1. Install Jenkins
+2. Install Java
+3. Ensure jenkins installation i.e. jenkins.war file is in the same folder as docker-compose file and selenium-server-4.27.0 file
+4. Then open the folder all the above download files are located and open it in a terminal
+5. Verify java is installed in your system by tying java --version on your terminal, then output will show the version installed if it's already on your computer
+6. Commands to run jenkins is ==> java -jar jenkins.war
+7. Output is ==> PythonProject % java -jar jenkins.war
+Running with Java 11 from /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home, which is older than the minimum required version (Java 17).
+Supported Java versions are: [17, 21]
+See https://jenkins.io/redirect/java-support/ for more information.
+8. Because the current version of java doesn't support jenkins as stated in the ouput above, then one needs to upgrade java
+9. Command to use to upgrade java is ==> java -jar jenkins.war --enable-future-java
+
+2 Things to take Notes:
+------------------------
+1. Before deployment ==> Automatically tests are executed
+2. DG ==> Branch ==> execute in Jenkins by selecting your branch ==> PR ==> Master branch
