@@ -261,6 +261,43 @@ Supported Java versions are: [17, 21]
 See https://jenkins.io/redirect/java-support/ for more information.
 8. Because the current version of java doesn't support jenkins as stated in the ouput above, then one needs to upgrade java
 9. Command to use to upgrade java is ==> java -jar jenkins.war --enable-future-java
+See: https://docs.brew.sh/Homebrew-and-Python
+==> azure-cli
+zsh completions have been installed to:
+  /usr/local/share/zsh/site-functions
+10. After updating your Java to the accurate version that works for Jenkins
+11. Then repeat the Commands to run jenkins is ==> java -jar jenkins.war
+12. After installation and you seeing "hudson.lifecycle.Lifecycle#onReady: Jenkins is fully up and running" written on terminal
+13. Go to your browser and type localhost:8080 (this is the default host where jenkins run) on search engine but localhost:4444 is port number
+14. Jenkins page is loaded and this "/Users/olakoya/.jenkins/secrets/initialAdminPassword" is displayed prompting administration password to be entered
+15. The administration password is displayed on the terminal "a2011cee58cb4f43b040d5170a0c28f1"
+16. A page appeared and install all libraries compatible to Jenkins, then Getting Started "Create First Admin User" form page is popped up to be completed
+17. I completed all textfield using "admin" and then for email I used admin@gmail.com
+18. Instance Configuration page is popped up with Jenkins URL: "http://localhost:8080/" and click "Save and Finish"
+19. Jenkins homepage is displayed and then click on 'Manage Jenkins' at the left bar options
+20. If you need extra tool to install, click on Plugins - search the tool name like 'Maven' if you use Java and then click install
+21. Because Jenkins is Java base application which means it's a Java file
+22. Go back to Mnaage Jenkins and click on Tools and scroll down to JDK Installations
+23. Click on JDK installations 'Add JDK' button, give name 'Java Home' and click on check box to install automatically
+24. Repeat the same for Git Installations
+25. Scroll to the bottom page and click on 'Apply' then 'Save'
+26. Go back to 'Dashboard' by clicking on Dashboard
+27. Click on 'New Item' by the left bar
+28. In the 'Enter an item name' text box type name of your project 'HybridFramework'
+29. Then select an item type i.e. the project type and for this project I select 'Freestyle Project' which is basic package and click save
+30. A Configuration page appear, then go to your Github repository and click on the url link
+31. Then place the repo url link in the Repository URL text field
+32. For Branch Specifier you enter where your push are located either ./main or ./master
+33. Scroll down, For Triggers you can select any or Build periodically
+34. One can configure Environment if you desire
+35. For Build Steps, select any appropriate to your project device, because I use macOS I select 'Execute with Shell'
+36. Sequential execution via windows required using commandline ==> pytest -s -v -m "sanity" --browser chrome testCases
+37. For Post-build Actions, select anyone suitable to your project e.g 'E-mail Notification'
+38. Click 'Apply' and 'Save'
+39. Click Dashboard to view your project/s
+40. Then click any project you want to work on
+41. To execute the selected project, click 'Build Now' on the left tab for it to run
+42. You would see the project start running the automation on the page
 
 2 Things to take Notes:
 ------------------------
