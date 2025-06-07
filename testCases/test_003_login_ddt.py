@@ -19,6 +19,7 @@ class Test_Login_DDT:
     logger = LogGen.loggen()
     path = os.path.abspath(os.curdir) + "//testData//Opencart_LoginData.xlsx"
 
+
     @pytest.mark.smoke
     @pytest.mark.regression
     @pytest.mark.sanity
