@@ -303,3 +303,36 @@ zsh completions have been installed to:
 ------------------------
 1. Before deployment ==> Automatically tests are executed
 2. DG ==> Branch ==> execute in Jenkins by selecting your branch ==> PR ==> Master branch
+
+How To Run and Open Jenkins Job from Terminal and Browser the Next Day?
+-------------------------------------------------------------------------
+1. Cmdline to install again via Homebrew on MacOS ==> brew install jenkins-lts
+2. Start the Jenkins service ==> brew services start jenkins-lts
+3. After a few seconds, open Jenkins in your browser ==> http://localhost:8080 (or your Jenkins server URL)
+4. Enter Username and Password to Login
+5. Click on your job (e.g., HybridFramework)
+6. Click Configure
+7. Scroll to "Build Triggers" section
+8. Check the box: ✅ Build periodically
+9. Enter a cron expression to run the job once the next day (e.g., at 9:00 AM) ==> 0 9 * * * (This means: minute 0, hour 9, every day.)
+
+To Make it run only once tomorrow?
+-----------------------------------
+Even thought that Jenkins doesn’t support one-time future runs natively, but here are two good workarounds:
+
+Option A: Use “Build periodically” + disable after:
+-----------------------------------------------------
+1. Use the cron schedule: 0 9 * * *
+2. After the job runs tomorrow, manually disable it.
+3. Or add a post-build step to disable itself after running (requires a script or plugin)
+
+Option B: Trigger Jenkins from a macOS shell
+----------------------------------------------
+1. Use launchd or cron to trigger Jenkins job remotely:
+==> curl -X POST http://localhost:8080/job/HybridFramework/build --user youruser:yourAPItoken
+2. Schedule this command with:
+==> echo "curl -X POST http://localhost:8080/job/HybridFramework/build --user youruser:yourAPItoken" | at 09:00 AM tomorrow
+at is not installed by default on macOS. One can use launchctl or cron as an alternative.
+
+
+
