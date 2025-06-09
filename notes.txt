@@ -335,4 +335,21 @@ Option B: Trigger Jenkins from a macOS shell
 at is not installed by default on macOS. One can use launchctl or cron as an alternative.
 
 
+To stop Jenkins running from the terminal, depends on how Jenkins method was started:
+---------------------------------------------------------------------------------------
+1. If you started Jenkins manually using java -jar jenkins.war:
+- Just press:==> Ctrl + C
+2. If Jenkins is running as a Homebrew service:
+- Stop it using:==> brew services stop jenkins-lts
+3. If you used plain jenkins:
+- Stop it using:==> brew services stop jenkins
+4. You can verify it's stopped:
+- Commandline ==> brew services list
+- Output is ==> Name        Status User File
+                    jenkins-lts none
+
+5. If Jenkins is running as a background process (PID):
+    - You can find and kill the Jenkins process:
+- Find the Jenkins process:==> ps aux | grep jenkins
+- Identify the correct PID (Process ID), then kill it:==> kill -9 <PID>
 
