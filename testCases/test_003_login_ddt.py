@@ -22,7 +22,7 @@ class Test_Login_DDT:
 
     @pytest.mark.smoke
     @pytest.mark.regression
-    @pytest.mark.sanity
+    # @pytest.mark.sanity
     def test_login_ddt(self, setup):
         self.logger.info("**** Starting Data Driven Test Case for Login ****")
         self.rows = XLUtils.getRowCount(self.path, 'Sheet 1')
