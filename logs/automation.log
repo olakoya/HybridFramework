@@ -2758,3 +2758,846 @@ Stacktrace:
 06/10/2025 06:48:10 PM: INFO: ****End of test_002_login****
 06/10/2025 06:48:10 PM: INFO: ****End of test_002_login****
 06/10/2025 06:48:10 PM: INFO: ****End of test_002_login****
+06/11/2025 08:27:11 PM: INFO: ****test_001_AccountRegistration started****
+06/11/2025 08:27:11 PM: INFO: ****test_001_AccountRegistration started****
+06/11/2025 08:27:11 PM: INFO: ****test_001_AccountRegistration started****
+06/11/2025 08:27:13 PM: INFO: ****Launching Application****
+06/11/2025 08:27:13 PM: INFO: ****Launching Application****
+06/11/2025 08:27:13 PM: INFO: ****Launching Application****
+06/11/2025 08:27:13 PM: INFO: ****Click on MyAccount ==> Register****
+06/11/2025 08:27:13 PM: INFO: ****Click on MyAccount ==> Register****
+06/11/2025 08:27:13 PM: INFO: ****Click on MyAccount ==> Register****
+06/11/2025 08:27:20 PM: INFO: ****Account Registration is Passed****
+06/11/2025 08:27:20 PM: INFO: ****Account Registration is Passed****
+06/11/2025 08:27:20 PM: INFO: ****Account Registration is Passed****
+06/11/2025 08:27:22 PM: INFO: ****Starting test_002_login****
+06/11/2025 08:27:22 PM: INFO: ****Starting test_002_login****
+06/11/2025 08:27:22 PM: INFO: ****Starting test_002_login****
+06/11/2025 08:27:26 PM: INFO: ****End of test_002_login****
+06/11/2025 08:27:26 PM: INFO: ****End of test_002_login****
+06/11/2025 08:27:26 PM: INFO: ****End of test_002_login****
+06/11/2025 08:27:28 PM: INFO: **** Starting Data Driven Test Case for Login ****
+06/11/2025 08:27:28 PM: INFO: **** Starting Data Driven Test Case for Login ****
+06/11/2025 08:27:28 PM: INFO: **** Starting Data Driven Test Case for Login ****
+06/11/2025 08:27:30 PM: INFO: Current URL after load: https://tutorialsninja.com/demo/index.php?route=common/home
+06/11/2025 08:27:30 PM: INFO: Current URL after load: https://tutorialsninja.com/demo/index.php?route=common/home
+06/11/2025 08:27:30 PM: INFO: Current URL after load: https://tutorialsninja.com/demo/index.php?route=common/home
+06/11/2025 08:27:30 PM: INFO: Page Title after load: Your Store
+06/11/2025 08:27:30 PM: INFO: Page Title after load: Your Store
+06/11/2025 08:27:30 PM: INFO: Page Title after load: Your Store
+06/11/2025 08:27:30 PM: INFO: ---------- Row 2 ----------
+06/11/2025 08:27:30 PM: INFO: ---------- Row 2 ----------
+06/11/2025 08:27:30 PM: INFO: ---------- Row 2 ----------
+06/11/2025 08:27:30 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:27:30 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:27:30 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:27:33 PM: INFO: Login link clicked successfully.
+06/11/2025 08:27:33 PM: INFO: Login link clicked successfully.
+06/11/2025 08:27:33 PM: INFO: Login link clicked successfully.
+06/11/2025 08:27:33 PM: INFO: Testing with Email: abcxyz@gmail.com, Password: abcxyz, Expected: Valid
+06/11/2025 08:27:33 PM: INFO: Testing with Email: abcxyz@gmail.com, Password: abcxyz, Expected: Valid
+06/11/2025 08:27:33 PM: INFO: Testing with Email: abcxyz@gmail.com, Password: abcxyz, Expected: Valid
+06/11/2025 08:27:35 PM: INFO: Login passed as expected (Valid)
+06/11/2025 08:27:35 PM: INFO: Login passed as expected (Valid)
+06/11/2025 08:27:35 PM: INFO: Login passed as expected (Valid)
+06/11/2025 08:27:35 PM: INFO: ---------- Row 3 ----------
+06/11/2025 08:27:35 PM: INFO: ---------- Row 3 ----------
+06/11/2025 08:27:35 PM: INFO: ---------- Row 3 ----------
+06/11/2025 08:27:35 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:27:35 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:27:35 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:27:38 PM: INFO: Login link clicked successfully.
+06/11/2025 08:27:38 PM: INFO: Login link clicked successfully.
+06/11/2025 08:27:38 PM: INFO: Login link clicked successfully.
+06/11/2025 08:27:48 PM: ERROR: Email input not visible for row 3: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010e7fe7a8 chromedriver + 5892008
+1   chromedriver                        0x000000010e7f5efa chromedriver + 5857018
+2   chromedriver                        0x000000010e2c6400 chromedriver + 418816
+3   chromedriver                        0x000000010e31822b chromedriver + 754219
+4   chromedriver                        0x000000010e318441 chromedriver + 754753
+5   chromedriver                        0x000000010e368cd4 chromedriver + 1084628
+6   chromedriver                        0x000000010e33e50d chromedriver + 910605
+7   chromedriver                        0x000000010e366073 chromedriver + 1073267
+8   chromedriver                        0x000000010e33e2b3 chromedriver + 910003
+9   chromedriver                        0x000000010e30a507 chromedriver + 697607
+10  chromedriver                        0x000000010e30b171 chromedriver + 700785
+11  chromedriver                        0x000000010e7bc550 chromedriver + 5621072
+12  chromedriver                        0x000000010e7c04df chromedriver + 5637343
+13  chromedriver                        0x000000010e797962 chromedriver + 5470562
+14  chromedriver                        0x000000010e7c0e4f chromedriver + 5639759
+15  chromedriver                        0x000000010e786124 chromedriver + 5398820
+16  chromedriver                        0x000000010e7e3708 chromedriver + 5781256
+17  chromedriver                        0x000000010e7e38d0 chromedriver + 5781712
+18  chromedriver                        0x000000010e7f5ac1 chromedriver + 5855937
+19  libsystem_pthread.dylib             0x00007ff8137e1df1 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff8137dd857 thread_start + 15
+
+06/11/2025 08:27:48 PM: ERROR: Email input not visible for row 3: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010e7fe7a8 chromedriver + 5892008
+1   chromedriver                        0x000000010e7f5efa chromedriver + 5857018
+2   chromedriver                        0x000000010e2c6400 chromedriver + 418816
+3   chromedriver                        0x000000010e31822b chromedriver + 754219
+4   chromedriver                        0x000000010e318441 chromedriver + 754753
+5   chromedriver                        0x000000010e368cd4 chromedriver + 1084628
+6   chromedriver                        0x000000010e33e50d chromedriver + 910605
+7   chromedriver                        0x000000010e366073 chromedriver + 1073267
+8   chromedriver                        0x000000010e33e2b3 chromedriver + 910003
+9   chromedriver                        0x000000010e30a507 chromedriver + 697607
+10  chromedriver                        0x000000010e30b171 chromedriver + 700785
+11  chromedriver                        0x000000010e7bc550 chromedriver + 5621072
+12  chromedriver                        0x000000010e7c04df chromedriver + 5637343
+13  chromedriver                        0x000000010e797962 chromedriver + 5470562
+14  chromedriver                        0x000000010e7c0e4f chromedriver + 5639759
+15  chromedriver                        0x000000010e786124 chromedriver + 5398820
+16  chromedriver                        0x000000010e7e3708 chromedriver + 5781256
+17  chromedriver                        0x000000010e7e38d0 chromedriver + 5781712
+18  chromedriver                        0x000000010e7f5ac1 chromedriver + 5855937
+19  libsystem_pthread.dylib             0x00007ff8137e1df1 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff8137dd857 thread_start + 15
+
+06/11/2025 08:27:48 PM: ERROR: Email input not visible for row 3: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010e7fe7a8 chromedriver + 5892008
+1   chromedriver                        0x000000010e7f5efa chromedriver + 5857018
+2   chromedriver                        0x000000010e2c6400 chromedriver + 418816
+3   chromedriver                        0x000000010e31822b chromedriver + 754219
+4   chromedriver                        0x000000010e318441 chromedriver + 754753
+5   chromedriver                        0x000000010e368cd4 chromedriver + 1084628
+6   chromedriver                        0x000000010e33e50d chromedriver + 910605
+7   chromedriver                        0x000000010e366073 chromedriver + 1073267
+8   chromedriver                        0x000000010e33e2b3 chromedriver + 910003
+9   chromedriver                        0x000000010e30a507 chromedriver + 697607
+10  chromedriver                        0x000000010e30b171 chromedriver + 700785
+11  chromedriver                        0x000000010e7bc550 chromedriver + 5621072
+12  chromedriver                        0x000000010e7c04df chromedriver + 5637343
+13  chromedriver                        0x000000010e797962 chromedriver + 5470562
+14  chromedriver                        0x000000010e7c0e4f chromedriver + 5639759
+15  chromedriver                        0x000000010e786124 chromedriver + 5398820
+16  chromedriver                        0x000000010e7e3708 chromedriver + 5781256
+17  chromedriver                        0x000000010e7e38d0 chromedriver + 5781712
+18  chromedriver                        0x000000010e7f5ac1 chromedriver + 5855937
+19  libsystem_pthread.dylib             0x00007ff8137e1df1 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff8137dd857 thread_start + 15
+
+06/11/2025 08:27:49 PM: INFO: ---------- Row 4 ----------
+06/11/2025 08:27:49 PM: INFO: ---------- Row 4 ----------
+06/11/2025 08:27:49 PM: INFO: ---------- Row 4 ----------
+06/11/2025 08:27:49 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:27:49 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:27:49 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:27:52 PM: INFO: Login link clicked successfully.
+06/11/2025 08:27:52 PM: INFO: Login link clicked successfully.
+06/11/2025 08:27:52 PM: INFO: Login link clicked successfully.
+06/11/2025 08:28:02 PM: ERROR: Email input not visible for row 4: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010e7fe7a8 chromedriver + 5892008
+1   chromedriver                        0x000000010e7f5efa chromedriver + 5857018
+2   chromedriver                        0x000000010e2c6400 chromedriver + 418816
+3   chromedriver                        0x000000010e31822b chromedriver + 754219
+4   chromedriver                        0x000000010e318441 chromedriver + 754753
+5   chromedriver                        0x000000010e368cd4 chromedriver + 1084628
+6   chromedriver                        0x000000010e33e50d chromedriver + 910605
+7   chromedriver                        0x000000010e366073 chromedriver + 1073267
+8   chromedriver                        0x000000010e33e2b3 chromedriver + 910003
+9   chromedriver                        0x000000010e30a507 chromedriver + 697607
+10  chromedriver                        0x000000010e30b171 chromedriver + 700785
+11  chromedriver                        0x000000010e7bc550 chromedriver + 5621072
+12  chromedriver                        0x000000010e7c04df chromedriver + 5637343
+13  chromedriver                        0x000000010e797962 chromedriver + 5470562
+14  chromedriver                        0x000000010e7c0e4f chromedriver + 5639759
+15  chromedriver                        0x000000010e786124 chromedriver + 5398820
+16  chromedriver                        0x000000010e7e3708 chromedriver + 5781256
+17  chromedriver                        0x000000010e7e38d0 chromedriver + 5781712
+18  chromedriver                        0x000000010e7f5ac1 chromedriver + 5855937
+19  libsystem_pthread.dylib             0x00007ff8137e1df1 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff8137dd857 thread_start + 15
+
+06/11/2025 08:28:02 PM: ERROR: Email input not visible for row 4: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010e7fe7a8 chromedriver + 5892008
+1   chromedriver                        0x000000010e7f5efa chromedriver + 5857018
+2   chromedriver                        0x000000010e2c6400 chromedriver + 418816
+3   chromedriver                        0x000000010e31822b chromedriver + 754219
+4   chromedriver                        0x000000010e318441 chromedriver + 754753
+5   chromedriver                        0x000000010e368cd4 chromedriver + 1084628
+6   chromedriver                        0x000000010e33e50d chromedriver + 910605
+7   chromedriver                        0x000000010e366073 chromedriver + 1073267
+8   chromedriver                        0x000000010e33e2b3 chromedriver + 910003
+9   chromedriver                        0x000000010e30a507 chromedriver + 697607
+10  chromedriver                        0x000000010e30b171 chromedriver + 700785
+11  chromedriver                        0x000000010e7bc550 chromedriver + 5621072
+12  chromedriver                        0x000000010e7c04df chromedriver + 5637343
+13  chromedriver                        0x000000010e797962 chromedriver + 5470562
+14  chromedriver                        0x000000010e7c0e4f chromedriver + 5639759
+15  chromedriver                        0x000000010e786124 chromedriver + 5398820
+16  chromedriver                        0x000000010e7e3708 chromedriver + 5781256
+17  chromedriver                        0x000000010e7e38d0 chromedriver + 5781712
+18  chromedriver                        0x000000010e7f5ac1 chromedriver + 5855937
+19  libsystem_pthread.dylib             0x00007ff8137e1df1 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff8137dd857 thread_start + 15
+
+06/11/2025 08:28:02 PM: ERROR: Email input not visible for row 4: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010e7fe7a8 chromedriver + 5892008
+1   chromedriver                        0x000000010e7f5efa chromedriver + 5857018
+2   chromedriver                        0x000000010e2c6400 chromedriver + 418816
+3   chromedriver                        0x000000010e31822b chromedriver + 754219
+4   chromedriver                        0x000000010e318441 chromedriver + 754753
+5   chromedriver                        0x000000010e368cd4 chromedriver + 1084628
+6   chromedriver                        0x000000010e33e50d chromedriver + 910605
+7   chromedriver                        0x000000010e366073 chromedriver + 1073267
+8   chromedriver                        0x000000010e33e2b3 chromedriver + 910003
+9   chromedriver                        0x000000010e30a507 chromedriver + 697607
+10  chromedriver                        0x000000010e30b171 chromedriver + 700785
+11  chromedriver                        0x000000010e7bc550 chromedriver + 5621072
+12  chromedriver                        0x000000010e7c04df chromedriver + 5637343
+13  chromedriver                        0x000000010e797962 chromedriver + 5470562
+14  chromedriver                        0x000000010e7c0e4f chromedriver + 5639759
+15  chromedriver                        0x000000010e786124 chromedriver + 5398820
+16  chromedriver                        0x000000010e7e3708 chromedriver + 5781256
+17  chromedriver                        0x000000010e7e38d0 chromedriver + 5781712
+18  chromedriver                        0x000000010e7f5ac1 chromedriver + 5855937
+19  libsystem_pthread.dylib             0x00007ff8137e1df1 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff8137dd857 thread_start + 15
+
+06/11/2025 08:28:02 PM: INFO: ---------- Row 5 ----------
+06/11/2025 08:28:02 PM: INFO: ---------- Row 5 ----------
+06/11/2025 08:28:02 PM: INFO: ---------- Row 5 ----------
+06/11/2025 08:28:02 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:28:02 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:28:02 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:28:05 PM: INFO: Login link clicked successfully.
+06/11/2025 08:28:05 PM: INFO: Login link clicked successfully.
+06/11/2025 08:28:05 PM: INFO: Login link clicked successfully.
+06/11/2025 08:28:15 PM: ERROR: Email input not visible for row 5: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010e7fe7a8 chromedriver + 5892008
+1   chromedriver                        0x000000010e7f5efa chromedriver + 5857018
+2   chromedriver                        0x000000010e2c6400 chromedriver + 418816
+3   chromedriver                        0x000000010e31822b chromedriver + 754219
+4   chromedriver                        0x000000010e318441 chromedriver + 754753
+5   chromedriver                        0x000000010e368cd4 chromedriver + 1084628
+6   chromedriver                        0x000000010e33e50d chromedriver + 910605
+7   chromedriver                        0x000000010e366073 chromedriver + 1073267
+8   chromedriver                        0x000000010e33e2b3 chromedriver + 910003
+9   chromedriver                        0x000000010e30a507 chromedriver + 697607
+10  chromedriver                        0x000000010e30b171 chromedriver + 700785
+11  chromedriver                        0x000000010e7bc550 chromedriver + 5621072
+12  chromedriver                        0x000000010e7c04df chromedriver + 5637343
+13  chromedriver                        0x000000010e797962 chromedriver + 5470562
+14  chromedriver                        0x000000010e7c0e4f chromedriver + 5639759
+15  chromedriver                        0x000000010e786124 chromedriver + 5398820
+16  chromedriver                        0x000000010e7e3708 chromedriver + 5781256
+17  chromedriver                        0x000000010e7e38d0 chromedriver + 5781712
+18  chromedriver                        0x000000010e7f5ac1 chromedriver + 5855937
+19  libsystem_pthread.dylib             0x00007ff8137e1df1 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff8137dd857 thread_start + 15
+
+06/11/2025 08:28:15 PM: ERROR: Email input not visible for row 5: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010e7fe7a8 chromedriver + 5892008
+1   chromedriver                        0x000000010e7f5efa chromedriver + 5857018
+2   chromedriver                        0x000000010e2c6400 chromedriver + 418816
+3   chromedriver                        0x000000010e31822b chromedriver + 754219
+4   chromedriver                        0x000000010e318441 chromedriver + 754753
+5   chromedriver                        0x000000010e368cd4 chromedriver + 1084628
+6   chromedriver                        0x000000010e33e50d chromedriver + 910605
+7   chromedriver                        0x000000010e366073 chromedriver + 1073267
+8   chromedriver                        0x000000010e33e2b3 chromedriver + 910003
+9   chromedriver                        0x000000010e30a507 chromedriver + 697607
+10  chromedriver                        0x000000010e30b171 chromedriver + 700785
+11  chromedriver                        0x000000010e7bc550 chromedriver + 5621072
+12  chromedriver                        0x000000010e7c04df chromedriver + 5637343
+13  chromedriver                        0x000000010e797962 chromedriver + 5470562
+14  chromedriver                        0x000000010e7c0e4f chromedriver + 5639759
+15  chromedriver                        0x000000010e786124 chromedriver + 5398820
+16  chromedriver                        0x000000010e7e3708 chromedriver + 5781256
+17  chromedriver                        0x000000010e7e38d0 chromedriver + 5781712
+18  chromedriver                        0x000000010e7f5ac1 chromedriver + 5855937
+19  libsystem_pthread.dylib             0x00007ff8137e1df1 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff8137dd857 thread_start + 15
+
+06/11/2025 08:28:15 PM: ERROR: Email input not visible for row 5: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010e7fe7a8 chromedriver + 5892008
+1   chromedriver                        0x000000010e7f5efa chromedriver + 5857018
+2   chromedriver                        0x000000010e2c6400 chromedriver + 418816
+3   chromedriver                        0x000000010e31822b chromedriver + 754219
+4   chromedriver                        0x000000010e318441 chromedriver + 754753
+5   chromedriver                        0x000000010e368cd4 chromedriver + 1084628
+6   chromedriver                        0x000000010e33e50d chromedriver + 910605
+7   chromedriver                        0x000000010e366073 chromedriver + 1073267
+8   chromedriver                        0x000000010e33e2b3 chromedriver + 910003
+9   chromedriver                        0x000000010e30a507 chromedriver + 697607
+10  chromedriver                        0x000000010e30b171 chromedriver + 700785
+11  chromedriver                        0x000000010e7bc550 chromedriver + 5621072
+12  chromedriver                        0x000000010e7c04df chromedriver + 5637343
+13  chromedriver                        0x000000010e797962 chromedriver + 5470562
+14  chromedriver                        0x000000010e7c0e4f chromedriver + 5639759
+15  chromedriver                        0x000000010e786124 chromedriver + 5398820
+16  chromedriver                        0x000000010e7e3708 chromedriver + 5781256
+17  chromedriver                        0x000000010e7e38d0 chromedriver + 5781712
+18  chromedriver                        0x000000010e7f5ac1 chromedriver + 5855937
+19  libsystem_pthread.dylib             0x00007ff8137e1df1 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff8137dd857 thread_start + 15
+
+06/11/2025 08:28:15 PM: INFO: ---------- Row 6 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 6 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 6 ----------
+06/11/2025 08:28:15 PM: WARNING: Row 6 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 6 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 6 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: INFO: ---------- Row 7 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 7 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 7 ----------
+06/11/2025 08:28:15 PM: WARNING: Row 7 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 7 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 7 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: INFO: ---------- Row 8 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 8 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 8 ----------
+06/11/2025 08:28:15 PM: WARNING: Row 8 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 8 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 8 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: INFO: ---------- Row 9 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 9 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 9 ----------
+06/11/2025 08:28:15 PM: WARNING: Row 9 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 9 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 9 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: INFO: ---------- Row 10 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 10 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 10 ----------
+06/11/2025 08:28:15 PM: WARNING: Row 10 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 10 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 10 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: INFO: ---------- Row 11 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 11 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 11 ----------
+06/11/2025 08:28:15 PM: WARNING: Row 11 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 11 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 11 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: INFO: ---------- Row 12 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 12 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 12 ----------
+06/11/2025 08:28:15 PM: WARNING: Row 12 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 12 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 12 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: INFO: ---------- Row 13 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 13 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 13 ----------
+06/11/2025 08:28:15 PM: WARNING: Row 13 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 13 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 13 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: INFO: ---------- Row 14 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 14 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 14 ----------
+06/11/2025 08:28:15 PM: WARNING: Row 14 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 14 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 14 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: INFO: ---------- Row 15 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 15 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 15 ----------
+06/11/2025 08:28:15 PM: WARNING: Row 15 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 15 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 15 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: INFO: ---------- Row 16 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 16 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 16 ----------
+06/11/2025 08:28:15 PM: WARNING: Row 16 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 16 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 16 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: INFO: ---------- Row 17 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 17 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 17 ----------
+06/11/2025 08:28:15 PM: WARNING: Row 17 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 17 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: WARNING: Row 17 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:15 PM: INFO: ---------- Row 18 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 18 ----------
+06/11/2025 08:28:15 PM: INFO: ---------- Row 18 ----------
+06/11/2025 08:28:16 PM: WARNING: Row 18 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:16 PM: WARNING: Row 18 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:16 PM: WARNING: Row 18 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:16 PM: INFO: ---------- Row 19 ----------
+06/11/2025 08:28:16 PM: INFO: ---------- Row 19 ----------
+06/11/2025 08:28:16 PM: INFO: ---------- Row 19 ----------
+06/11/2025 08:28:16 PM: WARNING: Row 19 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:16 PM: WARNING: Row 19 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:16 PM: WARNING: Row 19 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:16 PM: INFO: ---------- Row 20 ----------
+06/11/2025 08:28:16 PM: INFO: ---------- Row 20 ----------
+06/11/2025 08:28:16 PM: INFO: ---------- Row 20 ----------
+06/11/2025 08:28:16 PM: WARNING: Row 20 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:16 PM: WARNING: Row 20 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:16 PM: WARNING: Row 20 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:16 PM: INFO: ---------- Row 21 ----------
+06/11/2025 08:28:16 PM: INFO: ---------- Row 21 ----------
+06/11/2025 08:28:16 PM: INFO: ---------- Row 21 ----------
+06/11/2025 08:28:16 PM: WARNING: Row 21 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:16 PM: WARNING: Row 21 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:16 PM: WARNING: Row 21 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:16 PM: INFO: ---------- Row 22 ----------
+06/11/2025 08:28:16 PM: INFO: ---------- Row 22 ----------
+06/11/2025 08:28:16 PM: INFO: ---------- Row 22 ----------
+06/11/2025 08:28:16 PM: WARNING: Row 22 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:16 PM: WARNING: Row 22 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:16 PM: WARNING: Row 22 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:28:16 PM: ERROR: Some data-driven login tests failed.
+06/11/2025 08:28:16 PM: ERROR: Some data-driven login tests failed.
+06/11/2025 08:28:16 PM: ERROR: Some data-driven login tests failed.
+06/11/2025 08:44:29 PM: INFO: ****test_001_AccountRegistration started****
+06/11/2025 08:44:29 PM: INFO: ****test_001_AccountRegistration started****
+06/11/2025 08:44:29 PM: INFO: ****test_001_AccountRegistration started****
+06/11/2025 08:44:30 PM: INFO: ****Launching Application****
+06/11/2025 08:44:30 PM: INFO: ****Launching Application****
+06/11/2025 08:44:30 PM: INFO: ****Launching Application****
+06/11/2025 08:44:31 PM: INFO: ****Click on MyAccount ==> Register****
+06/11/2025 08:44:31 PM: INFO: ****Click on MyAccount ==> Register****
+06/11/2025 08:44:31 PM: INFO: ****Click on MyAccount ==> Register****
+06/11/2025 08:44:38 PM: INFO: ****Account Registration is Passed****
+06/11/2025 08:44:38 PM: INFO: ****Account Registration is Passed****
+06/11/2025 08:44:38 PM: INFO: ****Account Registration is Passed****
+06/11/2025 08:44:40 PM: INFO: ****Starting test_002_login****
+06/11/2025 08:44:40 PM: INFO: ****Starting test_002_login****
+06/11/2025 08:44:40 PM: INFO: ****Starting test_002_login****
+06/11/2025 08:44:45 PM: INFO: ****End of test_002_login****
+06/11/2025 08:44:45 PM: INFO: ****End of test_002_login****
+06/11/2025 08:44:45 PM: INFO: ****End of test_002_login****
+06/11/2025 08:44:47 PM: INFO: **** Starting Data Driven Test Case for Login ****
+06/11/2025 08:44:47 PM: INFO: **** Starting Data Driven Test Case for Login ****
+06/11/2025 08:44:47 PM: INFO: **** Starting Data Driven Test Case for Login ****
+06/11/2025 08:44:50 PM: INFO: Current URL after load: https://tutorialsninja.com/demo/index.php?route=common/home
+06/11/2025 08:44:50 PM: INFO: Current URL after load: https://tutorialsninja.com/demo/index.php?route=common/home
+06/11/2025 08:44:50 PM: INFO: Current URL after load: https://tutorialsninja.com/demo/index.php?route=common/home
+06/11/2025 08:44:50 PM: INFO: Page Title after load: Your Store
+06/11/2025 08:44:50 PM: INFO: Page Title after load: Your Store
+06/11/2025 08:44:50 PM: INFO: Page Title after load: Your Store
+06/11/2025 08:44:50 PM: INFO: ---------- Row 2 ----------
+06/11/2025 08:44:50 PM: INFO: ---------- Row 2 ----------
+06/11/2025 08:44:50 PM: INFO: ---------- Row 2 ----------
+06/11/2025 08:44:50 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:44:50 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:44:50 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:44:53 PM: INFO: Login link clicked successfully.
+06/11/2025 08:44:53 PM: INFO: Login link clicked successfully.
+06/11/2025 08:44:53 PM: INFO: Login link clicked successfully.
+06/11/2025 08:44:53 PM: INFO: Testing with Email: abcxyz@gmail.com, Password: abcxyz, Expected: Valid
+06/11/2025 08:44:53 PM: INFO: Testing with Email: abcxyz@gmail.com, Password: abcxyz, Expected: Valid
+06/11/2025 08:44:53 PM: INFO: Testing with Email: abcxyz@gmail.com, Password: abcxyz, Expected: Valid
+06/11/2025 08:44:55 PM: INFO: Login passed as expected (Valid)
+06/11/2025 08:44:55 PM: INFO: Login passed as expected (Valid)
+06/11/2025 08:44:55 PM: INFO: Login passed as expected (Valid)
+06/11/2025 08:44:55 PM: INFO: ---------- Row 3 ----------
+06/11/2025 08:44:55 PM: INFO: ---------- Row 3 ----------
+06/11/2025 08:44:55 PM: INFO: ---------- Row 3 ----------
+06/11/2025 08:44:55 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:44:55 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:44:55 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:44:58 PM: INFO: Login link clicked successfully.
+06/11/2025 08:44:58 PM: INFO: Login link clicked successfully.
+06/11/2025 08:44:58 PM: INFO: Login link clicked successfully.
+06/11/2025 08:44:59 PM: INFO: Testing with Email: abcxyz@gmail.com, Password: abcxy, Expected: Invalid
+06/11/2025 08:44:59 PM: INFO: Testing with Email: abcxyz@gmail.com, Password: abcxy, Expected: Invalid
+06/11/2025 08:44:59 PM: INFO: Testing with Email: abcxyz@gmail.com, Password: abcxy, Expected: Invalid
+06/11/2025 08:45:10 PM: INFO: Login failed as expected (Invalid)
+06/11/2025 08:45:10 PM: INFO: Login failed as expected (Invalid)
+06/11/2025 08:45:10 PM: INFO: Login failed as expected (Invalid)
+06/11/2025 08:45:10 PM: INFO: ---------- Row 4 ----------
+06/11/2025 08:45:10 PM: INFO: ---------- Row 4 ----------
+06/11/2025 08:45:10 PM: INFO: ---------- Row 4 ----------
+06/11/2025 08:45:10 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:45:10 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:45:10 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:45:13 PM: INFO: Login link clicked successfully.
+06/11/2025 08:45:13 PM: INFO: Login link clicked successfully.
+06/11/2025 08:45:13 PM: INFO: Login link clicked successfully.
+06/11/2025 08:45:13 PM: INFO: Testing with Email: abcxy@gmail.com, Password: Abcxyzz, Expected: Invalid
+06/11/2025 08:45:13 PM: INFO: Testing with Email: abcxy@gmail.com, Password: Abcxyzz, Expected: Invalid
+06/11/2025 08:45:13 PM: INFO: Testing with Email: abcxy@gmail.com, Password: Abcxyzz, Expected: Invalid
+06/11/2025 08:45:24 PM: INFO: Login failed as expected (Invalid)
+06/11/2025 08:45:24 PM: INFO: Login failed as expected (Invalid)
+06/11/2025 08:45:24 PM: INFO: Login failed as expected (Invalid)
+06/11/2025 08:45:24 PM: INFO: ---------- Row 5 ----------
+06/11/2025 08:45:24 PM: INFO: ---------- Row 5 ----------
+06/11/2025 08:45:24 PM: INFO: ---------- Row 5 ----------
+06/11/2025 08:45:24 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:45:24 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:45:24 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:45:28 PM: INFO: Login link clicked successfully.
+06/11/2025 08:45:28 PM: INFO: Login link clicked successfully.
+06/11/2025 08:45:28 PM: INFO: Login link clicked successfully.
+06/11/2025 08:45:28 PM: INFO: Testing with Email: abcxy@gmail.com, Password: abcxy, Expected: Invalid
+06/11/2025 08:45:28 PM: INFO: Testing with Email: abcxy@gmail.com, Password: abcxy, Expected: Invalid
+06/11/2025 08:45:28 PM: INFO: Testing with Email: abcxy@gmail.com, Password: abcxy, Expected: Invalid
+06/11/2025 08:45:38 PM: INFO: Login failed as expected (Invalid)
+06/11/2025 08:45:38 PM: INFO: Login failed as expected (Invalid)
+06/11/2025 08:45:38 PM: INFO: Login failed as expected (Invalid)
+06/11/2025 08:45:38 PM: INFO: ---------- Row 6 ----------
+06/11/2025 08:45:38 PM: INFO: ---------- Row 6 ----------
+06/11/2025 08:45:38 PM: INFO: ---------- Row 6 ----------
+06/11/2025 08:45:38 PM: WARNING: Row 6 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:38 PM: WARNING: Row 6 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:38 PM: WARNING: Row 6 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:38 PM: INFO: ---------- Row 7 ----------
+06/11/2025 08:45:38 PM: INFO: ---------- Row 7 ----------
+06/11/2025 08:45:38 PM: INFO: ---------- Row 7 ----------
+06/11/2025 08:45:39 PM: WARNING: Row 7 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 7 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 7 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: INFO: ---------- Row 8 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 8 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 8 ----------
+06/11/2025 08:45:39 PM: WARNING: Row 8 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 8 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 8 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: INFO: ---------- Row 9 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 9 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 9 ----------
+06/11/2025 08:45:39 PM: WARNING: Row 9 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 9 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 9 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: INFO: ---------- Row 10 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 10 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 10 ----------
+06/11/2025 08:45:39 PM: WARNING: Row 10 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 10 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 10 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: INFO: ---------- Row 11 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 11 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 11 ----------
+06/11/2025 08:45:39 PM: WARNING: Row 11 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 11 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 11 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: INFO: ---------- Row 12 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 12 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 12 ----------
+06/11/2025 08:45:39 PM: WARNING: Row 12 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 12 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 12 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: INFO: ---------- Row 13 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 13 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 13 ----------
+06/11/2025 08:45:39 PM: WARNING: Row 13 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 13 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 13 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: INFO: ---------- Row 14 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 14 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 14 ----------
+06/11/2025 08:45:39 PM: WARNING: Row 14 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 14 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 14 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: INFO: ---------- Row 15 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 15 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 15 ----------
+06/11/2025 08:45:39 PM: WARNING: Row 15 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 15 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 15 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: INFO: ---------- Row 16 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 16 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 16 ----------
+06/11/2025 08:45:39 PM: WARNING: Row 16 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 16 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 16 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: INFO: ---------- Row 17 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 17 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 17 ----------
+06/11/2025 08:45:39 PM: WARNING: Row 17 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 17 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 17 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: INFO: ---------- Row 18 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 18 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 18 ----------
+06/11/2025 08:45:39 PM: WARNING: Row 18 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 18 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 18 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: INFO: ---------- Row 19 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 19 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 19 ----------
+06/11/2025 08:45:39 PM: WARNING: Row 19 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 19 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 19 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: INFO: ---------- Row 20 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 20 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 20 ----------
+06/11/2025 08:45:39 PM: WARNING: Row 20 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 20 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 20 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: INFO: ---------- Row 21 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 21 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 21 ----------
+06/11/2025 08:45:39 PM: WARNING: Row 21 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 21 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 21 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: INFO: ---------- Row 22 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 22 ----------
+06/11/2025 08:45:39 PM: INFO: ---------- Row 22 ----------
+06/11/2025 08:45:39 PM: WARNING: Row 22 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 22 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: WARNING: Row 22 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:45:39 PM: INFO: All data-driven login tests passed.
+06/11/2025 08:45:39 PM: INFO: All data-driven login tests passed.
+06/11/2025 08:45:39 PM: INFO: All data-driven login tests passed.
+06/11/2025 08:45:39 PM: INFO: ******* End of test_003_login_ddt *******
+06/11/2025 08:45:39 PM: INFO: ******* End of test_003_login_ddt *******
+06/11/2025 08:45:39 PM: INFO: ******* End of test_003_login_ddt *******
+06/11/2025 08:47:42 PM: INFO: ****test_001_AccountRegistration started****
+06/11/2025 08:47:42 PM: INFO: ****test_001_AccountRegistration started****
+06/11/2025 08:47:42 PM: INFO: ****test_001_AccountRegistration started****
+06/11/2025 08:47:44 PM: INFO: ****Launching Application****
+06/11/2025 08:47:44 PM: INFO: ****Launching Application****
+06/11/2025 08:47:44 PM: INFO: ****Launching Application****
+06/11/2025 08:47:44 PM: INFO: ****Click on MyAccount ==> Register****
+06/11/2025 08:47:44 PM: INFO: ****Click on MyAccount ==> Register****
+06/11/2025 08:47:44 PM: INFO: ****Click on MyAccount ==> Register****
+06/11/2025 08:47:51 PM: ERROR: ****Account Registration is Failed****
+06/11/2025 08:47:51 PM: ERROR: ****Account Registration is Failed****
+06/11/2025 08:47:51 PM: ERROR: ****Account Registration is Failed****
+06/11/2025 08:47:53 PM: INFO: ****Starting test_002_login****
+06/11/2025 08:47:53 PM: INFO: ****Starting test_002_login****
+06/11/2025 08:47:53 PM: INFO: ****Starting test_002_login****
+06/11/2025 08:47:58 PM: INFO: ****End of test_002_login****
+06/11/2025 08:47:58 PM: INFO: ****End of test_002_login****
+06/11/2025 08:47:58 PM: INFO: ****End of test_002_login****
+06/11/2025 08:47:59 PM: INFO: **** Starting Data Driven Test Case for Login ****
+06/11/2025 08:47:59 PM: INFO: **** Starting Data Driven Test Case for Login ****
+06/11/2025 08:47:59 PM: INFO: **** Starting Data Driven Test Case for Login ****
+06/11/2025 08:48:02 PM: INFO: Current URL after load: https://tutorialsninja.com/demo/index.php?route=common/home
+06/11/2025 08:48:02 PM: INFO: Current URL after load: https://tutorialsninja.com/demo/index.php?route=common/home
+06/11/2025 08:48:02 PM: INFO: Current URL after load: https://tutorialsninja.com/demo/index.php?route=common/home
+06/11/2025 08:48:02 PM: INFO: Page Title after load: Your Store
+06/11/2025 08:48:02 PM: INFO: Page Title after load: Your Store
+06/11/2025 08:48:02 PM: INFO: Page Title after load: Your Store
+06/11/2025 08:48:02 PM: INFO: ---------- Row 2 ----------
+06/11/2025 08:48:02 PM: INFO: ---------- Row 2 ----------
+06/11/2025 08:48:02 PM: INFO: ---------- Row 2 ----------
+06/11/2025 08:48:02 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:48:02 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:48:02 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:48:05 PM: INFO: Login link clicked successfully.
+06/11/2025 08:48:05 PM: INFO: Login link clicked successfully.
+06/11/2025 08:48:05 PM: INFO: Login link clicked successfully.
+06/11/2025 08:48:05 PM: INFO: Testing with Email: abcxyz@gmail.com, Password: abcxyz, Expected: Valid
+06/11/2025 08:48:05 PM: INFO: Testing with Email: abcxyz@gmail.com, Password: abcxyz, Expected: Valid
+06/11/2025 08:48:05 PM: INFO: Testing with Email: abcxyz@gmail.com, Password: abcxyz, Expected: Valid
+06/11/2025 08:48:06 PM: INFO: Login passed as expected (Valid)
+06/11/2025 08:48:06 PM: INFO: Login passed as expected (Valid)
+06/11/2025 08:48:06 PM: INFO: Login passed as expected (Valid)
+06/11/2025 08:48:07 PM: INFO: ---------- Row 3 ----------
+06/11/2025 08:48:07 PM: INFO: ---------- Row 3 ----------
+06/11/2025 08:48:07 PM: INFO: ---------- Row 3 ----------
+06/11/2025 08:48:07 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:48:07 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:48:07 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:48:10 PM: INFO: Login link clicked successfully.
+06/11/2025 08:48:10 PM: INFO: Login link clicked successfully.
+06/11/2025 08:48:10 PM: INFO: Login link clicked successfully.
+06/11/2025 08:48:20 PM: ERROR: Email input not visible for row 3: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010ba2e7a8 chromedriver + 5892008
+1   chromedriver                        0x000000010ba25efa chromedriver + 5857018
+2   chromedriver                        0x000000010b4f6400 chromedriver + 418816
+3   chromedriver                        0x000000010b54822b chromedriver + 754219
+4   chromedriver                        0x000000010b548441 chromedriver + 754753
+5   chromedriver                        0x000000010b598cd4 chromedriver + 1084628
+6   chromedriver                        0x000000010b56e50d chromedriver + 910605
+7   chromedriver                        0x000000010b596073 chromedriver + 1073267
+8   chromedriver                        0x000000010b56e2b3 chromedriver + 910003
+9   chromedriver                        0x000000010b53a507 chromedriver + 697607
+10  chromedriver                        0x000000010b53b171 chromedriver + 700785
+11  chromedriver                        0x000000010b9ec550 chromedriver + 5621072
+12  chromedriver                        0x000000010b9f04df chromedriver + 5637343
+13  chromedriver                        0x000000010b9c7962 chromedriver + 5470562
+14  chromedriver                        0x000000010b9f0e4f chromedriver + 5639759
+15  chromedriver                        0x000000010b9b6124 chromedriver + 5398820
+16  chromedriver                        0x000000010ba13708 chromedriver + 5781256
+17  chromedriver                        0x000000010ba138d0 chromedriver + 5781712
+18  chromedriver                        0x000000010ba25ac1 chromedriver + 5855937
+19  libsystem_pthread.dylib             0x00007ff8137e1df1 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff8137dd857 thread_start + 15
+
+06/11/2025 08:48:20 PM: ERROR: Email input not visible for row 3: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010ba2e7a8 chromedriver + 5892008
+1   chromedriver                        0x000000010ba25efa chromedriver + 5857018
+2   chromedriver                        0x000000010b4f6400 chromedriver + 418816
+3   chromedriver                        0x000000010b54822b chromedriver + 754219
+4   chromedriver                        0x000000010b548441 chromedriver + 754753
+5   chromedriver                        0x000000010b598cd4 chromedriver + 1084628
+6   chromedriver                        0x000000010b56e50d chromedriver + 910605
+7   chromedriver                        0x000000010b596073 chromedriver + 1073267
+8   chromedriver                        0x000000010b56e2b3 chromedriver + 910003
+9   chromedriver                        0x000000010b53a507 chromedriver + 697607
+10  chromedriver                        0x000000010b53b171 chromedriver + 700785
+11  chromedriver                        0x000000010b9ec550 chromedriver + 5621072
+12  chromedriver                        0x000000010b9f04df chromedriver + 5637343
+13  chromedriver                        0x000000010b9c7962 chromedriver + 5470562
+14  chromedriver                        0x000000010b9f0e4f chromedriver + 5639759
+15  chromedriver                        0x000000010b9b6124 chromedriver + 5398820
+16  chromedriver                        0x000000010ba13708 chromedriver + 5781256
+17  chromedriver                        0x000000010ba138d0 chromedriver + 5781712
+18  chromedriver                        0x000000010ba25ac1 chromedriver + 5855937
+19  libsystem_pthread.dylib             0x00007ff8137e1df1 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff8137dd857 thread_start + 15
+
+06/11/2025 08:48:20 PM: ERROR: Email input not visible for row 3: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010ba2e7a8 chromedriver + 5892008
+1   chromedriver                        0x000000010ba25efa chromedriver + 5857018
+2   chromedriver                        0x000000010b4f6400 chromedriver + 418816
+3   chromedriver                        0x000000010b54822b chromedriver + 754219
+4   chromedriver                        0x000000010b548441 chromedriver + 754753
+5   chromedriver                        0x000000010b598cd4 chromedriver + 1084628
+6   chromedriver                        0x000000010b56e50d chromedriver + 910605
+7   chromedriver                        0x000000010b596073 chromedriver + 1073267
+8   chromedriver                        0x000000010b56e2b3 chromedriver + 910003
+9   chromedriver                        0x000000010b53a507 chromedriver + 697607
+10  chromedriver                        0x000000010b53b171 chromedriver + 700785
+11  chromedriver                        0x000000010b9ec550 chromedriver + 5621072
+12  chromedriver                        0x000000010b9f04df chromedriver + 5637343
+13  chromedriver                        0x000000010b9c7962 chromedriver + 5470562
+14  chromedriver                        0x000000010b9f0e4f chromedriver + 5639759
+15  chromedriver                        0x000000010b9b6124 chromedriver + 5398820
+16  chromedriver                        0x000000010ba13708 chromedriver + 5781256
+17  chromedriver                        0x000000010ba138d0 chromedriver + 5781712
+18  chromedriver                        0x000000010ba25ac1 chromedriver + 5855937
+19  libsystem_pthread.dylib             0x00007ff8137e1df1 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff8137dd857 thread_start + 15
+
+06/11/2025 08:48:20 PM: INFO: ---------- Row 4 ----------
+06/11/2025 08:48:20 PM: INFO: ---------- Row 4 ----------
+06/11/2025 08:48:20 PM: INFO: ---------- Row 4 ----------
+06/11/2025 08:48:20 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:48:20 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:48:20 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:48:24 PM: INFO: Login link clicked successfully.
+06/11/2025 08:48:24 PM: INFO: Login link clicked successfully.
+06/11/2025 08:48:24 PM: INFO: Login link clicked successfully.
+06/11/2025 08:48:24 PM: INFO: Testing with Email: abcxy@gmail.com, Password: Abcxyzz, Expected: Invalid
+06/11/2025 08:48:24 PM: INFO: Testing with Email: abcxy@gmail.com, Password: Abcxyzz, Expected: Invalid
+06/11/2025 08:48:24 PM: INFO: Testing with Email: abcxy@gmail.com, Password: Abcxyzz, Expected: Invalid
+06/11/2025 08:48:35 PM: INFO: Login failed as expected (Invalid)
+06/11/2025 08:48:35 PM: INFO: Login failed as expected (Invalid)
+06/11/2025 08:48:35 PM: INFO: Login failed as expected (Invalid)
+06/11/2025 08:48:35 PM: INFO: ---------- Row 5 ----------
+06/11/2025 08:48:35 PM: INFO: ---------- Row 5 ----------
+06/11/2025 08:48:35 PM: INFO: ---------- Row 5 ----------
+06/11/2025 08:48:35 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:48:35 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:48:35 PM: INFO: Clicking on 'My Account'...
+06/11/2025 08:48:39 PM: INFO: Login link clicked successfully.
+06/11/2025 08:48:39 PM: INFO: Login link clicked successfully.
+06/11/2025 08:48:39 PM: INFO: Login link clicked successfully.
+06/11/2025 08:48:39 PM: INFO: Testing with Email: abcxy@gmail.com, Password: abcxy, Expected: Invalid
+06/11/2025 08:48:39 PM: INFO: Testing with Email: abcxy@gmail.com, Password: abcxy, Expected: Invalid
+06/11/2025 08:48:39 PM: INFO: Testing with Email: abcxy@gmail.com, Password: abcxy, Expected: Invalid
+06/11/2025 08:48:49 PM: INFO: Login failed as expected (Invalid)
+06/11/2025 08:48:49 PM: INFO: Login failed as expected (Invalid)
+06/11/2025 08:48:49 PM: INFO: Login failed as expected (Invalid)
+06/11/2025 08:48:49 PM: INFO: ---------- Row 6 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 6 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 6 ----------
+06/11/2025 08:48:49 PM: WARNING: Row 6 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 6 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 6 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: INFO: ---------- Row 7 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 7 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 7 ----------
+06/11/2025 08:48:49 PM: WARNING: Row 7 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 7 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 7 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: INFO: ---------- Row 8 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 8 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 8 ----------
+06/11/2025 08:48:49 PM: WARNING: Row 8 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 8 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 8 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: INFO: ---------- Row 9 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 9 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 9 ----------
+06/11/2025 08:48:49 PM: WARNING: Row 9 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 9 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 9 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: INFO: ---------- Row 10 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 10 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 10 ----------
+06/11/2025 08:48:49 PM: WARNING: Row 10 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 10 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 10 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: INFO: ---------- Row 11 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 11 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 11 ----------
+06/11/2025 08:48:49 PM: WARNING: Row 11 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 11 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 11 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: INFO: ---------- Row 12 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 12 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 12 ----------
+06/11/2025 08:48:49 PM: WARNING: Row 12 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 12 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 12 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: INFO: ---------- Row 13 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 13 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 13 ----------
+06/11/2025 08:48:49 PM: WARNING: Row 13 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 13 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 13 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: INFO: ---------- Row 14 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 14 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 14 ----------
+06/11/2025 08:48:49 PM: WARNING: Row 14 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 14 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: WARNING: Row 14 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:49 PM: INFO: ---------- Row 15 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 15 ----------
+06/11/2025 08:48:49 PM: INFO: ---------- Row 15 ----------
+06/11/2025 08:48:50 PM: WARNING: Row 15 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: WARNING: Row 15 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: WARNING: Row 15 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: INFO: ---------- Row 16 ----------
+06/11/2025 08:48:50 PM: INFO: ---------- Row 16 ----------
+06/11/2025 08:48:50 PM: INFO: ---------- Row 16 ----------
+06/11/2025 08:48:50 PM: WARNING: Row 16 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: WARNING: Row 16 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: WARNING: Row 16 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: INFO: ---------- Row 17 ----------
+06/11/2025 08:48:50 PM: INFO: ---------- Row 17 ----------
+06/11/2025 08:48:50 PM: INFO: ---------- Row 17 ----------
+06/11/2025 08:48:50 PM: WARNING: Row 17 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: WARNING: Row 17 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: WARNING: Row 17 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: INFO: ---------- Row 18 ----------
+06/11/2025 08:48:50 PM: INFO: ---------- Row 18 ----------
+06/11/2025 08:48:50 PM: INFO: ---------- Row 18 ----------
+06/11/2025 08:48:50 PM: WARNING: Row 18 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: WARNING: Row 18 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: WARNING: Row 18 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: INFO: ---------- Row 19 ----------
+06/11/2025 08:48:50 PM: INFO: ---------- Row 19 ----------
+06/11/2025 08:48:50 PM: INFO: ---------- Row 19 ----------
+06/11/2025 08:48:50 PM: WARNING: Row 19 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: WARNING: Row 19 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: WARNING: Row 19 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: INFO: ---------- Row 20 ----------
+06/11/2025 08:48:50 PM: INFO: ---------- Row 20 ----------
+06/11/2025 08:48:50 PM: INFO: ---------- Row 20 ----------
+06/11/2025 08:48:50 PM: WARNING: Row 20 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: WARNING: Row 20 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: WARNING: Row 20 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: INFO: ---------- Row 21 ----------
+06/11/2025 08:48:50 PM: INFO: ---------- Row 21 ----------
+06/11/2025 08:48:50 PM: INFO: ---------- Row 21 ----------
+06/11/2025 08:48:50 PM: WARNING: Row 21 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: WARNING: Row 21 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: WARNING: Row 21 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: INFO: ---------- Row 22 ----------
+06/11/2025 08:48:50 PM: INFO: ---------- Row 22 ----------
+06/11/2025 08:48:50 PM: INFO: ---------- Row 22 ----------
+06/11/2025 08:48:50 PM: WARNING: Row 22 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: WARNING: Row 22 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: WARNING: Row 22 skipped due to missing data: email=None, password=None, expected=None
+06/11/2025 08:48:50 PM: ERROR: Some data-driven login tests failed.
+06/11/2025 08:48:50 PM: ERROR: Some data-driven login tests failed.
+06/11/2025 08:48:50 PM: ERROR: Some data-driven login tests failed.
