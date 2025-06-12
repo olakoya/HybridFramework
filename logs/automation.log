@@ -3601,3 +3601,15 @@ Stacktrace:
 06/11/2025 08:48:50 PM: ERROR: Some data-driven login tests failed.
 06/11/2025 08:48:50 PM: ERROR: Some data-driven login tests failed.
 06/11/2025 08:48:50 PM: ERROR: Some data-driven login tests failed.
+06/12/2025 07:18:25 PM: INFO: ****Starting test_002_login****
+06/12/2025 07:18:25 PM: INFO: ****Starting test_002_login****
+06/12/2025 07:18:25 PM: INFO: ****Starting test_002_login****
+06/12/2025 07:18:35 PM: INFO: ****End of test_002_login****
+06/12/2025 07:18:35 PM: INFO: ****End of test_002_login****
+06/12/2025 07:18:35 PM: INFO: ****End of test_002_login****
+06/12/2025 07:27:31 PM: INFO: ****Starting test_002_login****
+06/12/2025 07:27:31 PM: INFO: ****Starting test_002_login****
+06/12/2025 07:27:31 PM: INFO: ****Starting test_002_login****
+06/12/2025 07:27:38 PM: INFO: ****End of test_002_login****
+06/12/2025 07:27:38 PM: INFO: ****End of test_002_login****
+06/12/2025 07:27:38 PM: INFO: ****End of test_002_login****

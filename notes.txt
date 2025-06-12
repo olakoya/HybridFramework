@@ -125,10 +125,10 @@ Next Steps;
 '''
 Created:
 PageObjects Package: Must consists of Locators (Pointing to specific elements), Constructors, and Methods
-    1. HopmePage.py ==> consists of multiple elements
+    1. HomePage.py ==> consists of multiple elements
 '''
 
-Execution Code: pytest -s -v testCases/test_001_AccountRegistration.py
+Execution Code: ==> pytest -s -v testCases/test_001_AccountRegistration.py
 
 Screenshot pathway:
 
@@ -245,8 +245,14 @@ Selenium Hydrid Framework - 6
 
 Above are each stage of tasks
 
-To Install Jenkins:
--------------------
+Agent Pools
+-------------
+1.Already packages are installed
+2.install packages first in requirements.txt
+
+
+To Install *Jenkins*:
+----------------------
 Jenkins is a Java Based application ==> Java installed
 
 1. Install Jenkins
@@ -353,8 +359,8 @@ To stop Jenkins running from the terminal, depends on how Jenkins method was sta
 - Find the Jenkins process:==> ps aux | grep jenkins
 - Identify the correct PID (Process ID), then kill it:==> kill -9 <PID>
 
-Selenium Hybrid Framework - 7 Remote Execution Via Selenium Grid
-------------------------------------------------------------------
+Selenium Hybrid Framework - 7 Remote Execution Via *Selenium Grid*
+--------------------------------------------------------------------
 1. To open terminal from the folder where the selenium server version is located
 2. Type this cmd in the terminal ==> java -jar selenium-server-4.31.0.jar standalone
 3. Then open the grid by typing http://localhost:4444/ui/ in the browser
@@ -364,8 +370,12 @@ Selenium Hybrid Framework - 7 Remote Execution Via Selenium Grid
 1st webpage ==> https://tutorialsninja.com/demo/index.php?route=common/home
 2nd webpage ==> https://naveenautomationlabs.com/opencart/index.php?route=common/home
 
-Agent Pools
--------------
 
-1.Already packages are installed
-2.install apckages first in rquirements.txt
+Types of Execution:
+--------------------
+1. Sequential Mode ==> pytest -s -v --browser chrome --os mac testCases/
+2. Parallel Mode (number test cases to be executed in parallel) in this case it's 2==> pytest -s -v -m "sanity" -n=2 testCases/
+- 1. Login
+- 2 Account Registration
+
+To execute in Jenkins, I need to commit the changes in github
