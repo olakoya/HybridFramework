@@ -310,9 +310,12 @@ zsh completions have been installed to:
 1. Before deployment ==> Automatically tests are executed
 2. DG ==> Branch ==> execute in Jenkins by selecting your branch ==> PR ==> Master branch
 
-How To Run and Open Jenkins Job from Terminal and Browser the Next Day?
+How To Run and Open Jenkins Job from Terminal and Browser the Following Day?
 -------------------------------------------------------------------------
 1. Cmdline to install again via Homebrew on MacOS ==> brew install jenkins-lts
+    - To make a java run automatically for future execution, use commandline:
+    - i. java -jar jenkins.war
+    - ii. java -jar jenkins.war --enable-future-java
 2. Start the Jenkins service ==> brew services start jenkins-lts
 3. After a few seconds, open Jenkins in your browser ==> http://localhost:8080 (or your Jenkins server URL)
 4. Enter Username and Password to Login
@@ -378,4 +381,10 @@ Types of Execution:
 - 1. Login
 - 2 Account Registration
 
-To execute in Jenkins, I need to commit the changes in github
+How to Run both Jenkins and Selenium Grid Together in Parallel:
+-----------------------------------------------------------------
+1. To execute in Jenkins, firstly, I need to commit the changes in github
+2. Then open another terminal to start jenkins to run while selenium grid runs parallel to it making 2 terminals running
+3. To check for execution Pass or Fail report, follow this link given in jenkins output display on console
+==> - Generated html report: file:///Users/olakoya/.jenkins/workspace/HybridFramework/reports/12-06-2025%2019-50-42.html -
+
