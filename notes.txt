@@ -362,8 +362,8 @@ To stop Jenkins running from the terminal, depends on how Jenkins method was sta
 - Find the Jenkins process:==> ps aux | grep jenkins
 - Identify the correct PID (Process ID), then kill it:==> kill -9 <PID>
 
-Selenium Hybrid Framework - 7 Remote Execution Via *Selenium Grid*
---------------------------------------------------------------------
+Selenium Hybrid Framework - 7 Remote Execution Via *Selenium Grid* 11/06/25
+---------------------------------------------------------------------------
 1. To open terminal from the folder where the selenium server version is located
 2. Type this cmd in the terminal ==> java -jar selenium-server-4.31.0.jar standalone
 3. Then open the grid by typing http://localhost:4444/ui/ in the browser
@@ -381,10 +381,19 @@ Types of Execution:
 - 1. Login
 - 2 Account Registration
 
-How to Run both Jenkins and Selenium Grid Together in Parallel:
------------------------------------------------------------------
+How to Run both Jenkins and Selenium Grid Together in Parallel 12/06/25:
+--------------------------------------------------------------------------
 1. To execute in Jenkins, firstly, I need to commit the changes in github
 2. Then open another terminal to start jenkins to run while selenium grid runs parallel to it making 2 terminals running
 3. To check for execution Pass or Fail report, follow this link given in jenkins output display on console
 ==> - Generated html report: file:///Users/olakoya/.jenkins/workspace/HybridFramework/reports/12-06-2025%2019-50-42.html -
 
+Remote Execution via Docker 13/06/2025:
+----------------------------------------
+1. Create your docker-compose.yaml file on pycharm
+2. Run Jenkins from remote terminal
+3. Open docker desktop
+4. Enter cmdline to clean old containers ==>  docker-compose down
+5. Enter cmdline to run new containers ==>  docker-compose up --build
+6. Then go to browser http://localhost:4444/ui/# to check that selenium grid is up and running
+7. On homepage click "Overview" to see the platforms that are running
