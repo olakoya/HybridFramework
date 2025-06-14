@@ -72,7 +72,8 @@ def setup(browser_platform):
 # Hooks for HTML report metadata and to add environment info to HTML report
 @pytest.hookimpl(tryfirst=True)
 def pytest_configure(config):
-    report_dir = os.path.dirname(os.getcwd()) + "//HybridFramework//reports//"
+    # report_dir = os.path.dirname(os.getcwd()) + "//HybridFramework//reports//"
+    report_dir = os.path.join(os.path.dirname(__file__), 'reports')
     timestamp = datetime.now().strftime("%d-%m-%Y %H-%M-%S")
     config.option.htmlpath = os.path.join(report_dir, f"{timestamp}.html")
 

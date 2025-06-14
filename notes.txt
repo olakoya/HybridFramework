@@ -397,3 +397,6 @@ Remote Execution via Docker 13/06/2025:
 5. Enter cmdline to run new containers ==>  docker-compose up --build
 6. Then go to browser http://localhost:4444/ui/# to check that selenium grid is up and running
 7. On homepage click "Overview" to see the platforms that are running
+8. One uses cmdline ==> pytest -s -v -m "sanity" --browser chrome testCases
+8. The node only has one process to execute i.e only 1 test Cases as a time
+9. To have more number of processes i.e. Test cases to run, one needs to do some configuration
