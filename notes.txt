@@ -322,7 +322,7 @@ How To Run and Open Jenkins Job from Terminal and Browser the Following Day?
 5. Click on your job (e.g., HybridFramework)
 6. Click Configure
 7. Scroll to "Build Triggers" section
-8. Check the box: ✅ Build periodically
+8. Check the box: Build periodically
 9. Enter a cron expression to run the job once the next day (e.g., at 9:00 AM) ==> 0 9 * * * (This means: minute 0, hour 9, every day.)
 
 To Make it run only once tomorrow?
