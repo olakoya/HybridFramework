@@ -1,5 +1,6 @@
 AZURE CI/CD PIPELINES
----------------------
+-----------------------
+This wasn't part of the project but I decided to add to try using a different platform for the CI/CD process.
 
 - Azure DevOps is a comprehensive platform for implementing DevOps processes, covering the entire software development
 lifecycle. It features tools for planning, coding, testing, and deploying applications. The tutorial explains Azure DevOps
@@ -61,3 +62,6 @@ process. This efficiency is crucial for maintaining project timelines.
 management. Understanding these differences can influence project decisions.
 - Many companies prefer open-source tools like GitLab and Jenkins over proprietary solutions like Azure DevOps. This trend
 highlights the importance of familiarity with widely-used technologies in the job market.
+
+For practical work follow the steps on the below video:
+https://www.youtube.com/watch?v=4BibQ69MD8c
