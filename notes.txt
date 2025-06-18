@@ -384,8 +384,8 @@ Types of Execution:
 How to Run both Jenkins and Selenium Grid Together in Parallel 12/06/25:
 --------------------------------------------------------------------------
 1. To execute in Jenkins, firstly, I need to commit the changes in github
-2. Then open another terminal to start jenkins to run while selenium grid runs parallel to it making 2 terminals running
-3. To check for execution Pass or Fail report, follow this link given in jenkins output display on console
+2. Then open another terminal to start jenkins (java -jar jenkins.war ) to run while selenium grid runs parallel to it making 2 terminals running
+3. To check for execution Pass or Fail report, follow the link that looks like the one below given in jenkins output display on console
 ==> - Generated html report: file:///Users/olakoya/.jenkins/workspace/HybridFramework/reports/12-06-2025%2019-50-42.html -
 
 Remote Execution via Docker 13/06/2025:
@@ -394,9 +394,10 @@ Remote Execution via Docker 13/06/2025:
 2. Run Jenkins from remote terminal
 3. Open docker desktop
 4. Enter cmdline to clean old containers ==>  docker-compose down
-5. Enter cmdline to run new containers ==>  docker-compose up --build
+5. Enter cmdline in pycharm framework to run new containers ==>  docker-compose up --build
 6. Then go to browser http://localhost:4444/ui/# to check that selenium grid is up and running
 7. On homepage click "Overview" to see the platforms that are running
-8. One uses cmdline ==> pytest -s -v -m "sanity" --browser chrome testCases
-8. The node only has one process to execute i.e only 1 test Cases as a time
-9. To have more number of processes i.e. Test cases to run, one needs to do some configuration
+8. Enter cmdline to execute ==> pytest -s -v -m "sanity" --browser chrome testCases
+9. During execution go to selenium grid page, click on session to view the above docker execution
+10. The node only has one process to execute i.e only 1 test Cases at a time
+11. To have more number of processes i.e. Test cases to run, one needs to do some configuration
