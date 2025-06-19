@@ -1,9 +1,23 @@
 import os
+# import requests
+import time
+import subprocess
 from datetime import datetime
+from tabnanny import check
+
 import pytest
 from selenium import webdriver
 from utilities.readProperties import ReadConfig
 from pytest_metadata.plugin import metadata_key
+
+@pytest.fixture(scope="session", autouse=True)
+def setup_environment():
+    subprocess.run(["pip", "install", "-r", "requirements.txt"], check=True) # to install all packages in the parse cli (specify as a list)
+    subprocess.run(["docker-compose","up", "-d"], check=True) # when this is executed docker will be up and running
+    wait_for_grid()
+    yield
+    subprocess.run(["docker-compose", "down"], check=True)
+
 
 # Add custom CLI options
 def pytest_addoption(parser):
@@ -22,7 +36,6 @@ def browser_platform(request):
 def setup(browser_platform):
     browser, platform = browser_platform
     baseenv = ReadConfig.getEnvironment()  # 'local' or 'remote'
-
     if baseenv == "remote":
         options_map = {
             "chrome": webdriver.ChromeOptions,

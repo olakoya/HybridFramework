@@ -400,4 +400,18 @@ Remote Execution via Docker 13/06/2025:
 8. Enter cmdline to execute ==> pytest -s -v -m "sanity" --browser chrome testCases
 9. During execution go to selenium grid page, click on session to view the above docker execution
 10. The node only has one process to execute i.e only 1 test Cases at a time
-11. To have more number of processes i.e. Test cases to run, one needs to do some configuration
+11. To have more numbers of processes i.e. Test cases to run, one needs to do some configuration
+
+Agent Pools When Setting up Environments
+-----------------------------------------
+1.Already packages are installed and automate it, and this is maintained by QA team
+2.Or install packages first in requirements.txt by using this cmd
+    ==> pip install -r requirements.txt
+3. With the help of Jenkins pipelines I will execute into the machine
+4. To execute with docker, you need to issue it with this command
+    ==> docker-compose up
+5. You have to create an environment
+6. After adding the the environment set-up fixture
+7. Run it with this cmd ==>  pytest -s -v -m "sanity" testCases\
+
+
