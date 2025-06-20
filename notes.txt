@@ -407,6 +407,13 @@ Agent Pools When Setting up Environments
 1.Already packages are installed and automate it, and this is maintained by QA team
 2.Or install packages first in requirements.txt by using this cmd
     ==> pip install -r requirements.txt
+    - Should incase docker isn't running yet, Open your Docker desktop
+    - Go to the pythonproject folder in terminal
+    - Enter cmd line to start grid ==> java -jar selenium-server-4.31.0.jar standalone
+    - Go to web browser and paste this url to get selenium grid running==> http://localhost:4444/ui/#
+    - Go back to pycharm framework and enter ==> docker ps => to check that Selenium Grid is spin up
+    - Next enter cmdline ==>  docker-compose up -d
+    - Then ==> docker ps
 3. With the help of Jenkins pipelines I will execute into the machine
 4. To execute with docker, you need to issue it with this command
     ==> docker-compose up

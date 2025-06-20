@@ -1,5 +1,5 @@
 import os
-# import requests
+import requests
 import time
 import subprocess
 from datetime import datetime
@@ -9,6 +9,26 @@ import pytest
 from selenium import webdriver
 from utilities.readProperties import ReadConfig
 from pytest_metadata.plugin import metadata_key
+
+def wait_for_grid(timeout=60):
+    """
+    Waits until the Selenium Grid Hub is available.
+    """
+    hub_url = "http://localhost:4444/status"
+    start_time = time.time()
+    while time.time() - start_time < timeout:
+        try:
+            response = requests.get(hub_url)
+            if response.status_code == 200:
+                json_data = response.json()
+                if json_data.get("value", {}).get("ready", False):
+                    print("✅ Selenium Grid is ready.")
+                    return
+        except requests.exceptions.ConnectionError:
+            pass
+        time.sleep(2)
+    raise RuntimeError("❌ Timed out waiting for Selenium Grid to be ready.")
+
 
 @pytest.fixture(scope="session", autouse=True)
 def setup_environment():
