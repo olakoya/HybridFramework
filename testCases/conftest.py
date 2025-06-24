@@ -32,7 +32,7 @@ def wait_for_grid(timeout=60):
 
 @pytest.fixture(scope="session", autouse=True)
 def setup_environment():
-    subprocess.run(["pip", "install", "-r", "requirements.txt"], check=True) # to install all packages in the parse cli (specify as a list)
+    # subprocess.run(["pip", "install", "-r", "requirements.txt"], check=True) # to install all packages in the parse cli (specify as a list)
     subprocess.run(["docker-compose","up", "-d"], check=True) # when this is executed docker will be up and running
     wait_for_grid()
     yield

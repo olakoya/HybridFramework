@@ -1,9 +1,8 @@
-'''
 Automation Framework - Introduction
 -----------------------------------
 What is an Automation Framework
 -------------------------------
-- It is a or provides a systematic approach to writing, executing, and maintaining test scripts, promoting reusability,
+- It is a or it provides a systematic approach to writing, executing, and maintaining test scripts, promoting reusability,
 scalability, and efficiency.
 - We organize automation project files and folders in structured manner.
 
@@ -26,11 +25,11 @@ Types of Automation Frameworks
 
 2. User-Defined/Customized Frameworks
 --------------------------------------
-- This is Customized frameworks meet specific project or organization requirements.txt by integrating tools and libraries.
+- This Customized frameworks meet specific project or organization requirements.txt by integrating tools and libraries.
 - Different types of User-Defined:
-i. Hybrid-Driven framework combine pom
-ii. Keyword-driven framework
-iii. Data Driven Approaches
+    i. Hybrid-Driven framework combine pom
+    ii. Keyword-driven framework
+    iii. Data Driven Approaches
 
 
 Different Types of Phases in Developing Automation Framework
@@ -56,7 +55,7 @@ Different Types of Phases in Developing Automation Framework
 8. Utilities - Package
 9. Requirements.txt
 
-Project: https://tutorialsninja.com/demo/
+Project URL: https://tutorialsninja.com/demo/
 
 
 How to Select an Automation Testing Tool for UI
@@ -93,8 +92,8 @@ Avoid Automation: No Need To Automate
 
 - 100% automation is not at all possible practically.
 
-
 - We only keep modules in the Package;
+
 Python Packages for this project are;
 -------------------------------------
 1. PageObjects
@@ -118,26 +117,24 @@ Text file is;
 Next Steps;
 ------------
 1. Create a list of libraries or dependencies
-     - Called requirement.txt file and list all the requirements needed
-     - Then you go to terminal and type ==> 'pip install - requirements.txt' to automatically install all at once with one simple click
-     - Then ==> 'pip list' to confirm they've all been installed
-'''
-'''
+     - Make requirement.txt file and list all the requirements needed in the file
+     - Then you go to terminal and type cmd ==> 'pip install - requirements.txt' to automatically install all listed at once with one simple click
+     - Then cmd ==> 'pip list' to confirm they've all been installed
+
 Created:
-PageObjects Package: Must consists of Locators (Pointing to specific elements), Constructors, and Methods
-    1. HomePage.py ==> consists of multiple elements
-'''
+1. PageObjects Package: Must consists of Locators (Pointing to specific elements), Constructors, and Methods
+    i. HomePage.py ==> consists of multiple elements
 
-Execution Code: ==> pytest -s -v testCases/test_001_AccountRegistration.py
+    Execution Code: cmd ==> pytest -s -v testCases/test_001_AccountRegistration.py
 
-Screenshot pathway:
+2. Screenshot pathway:
+ Cmd lines :
+    Import os
 
-Import os
+    os.path.dirname(os.getcwd())+”\screenshots\\”+text_account_reg.png”
 
-os.path.dirname(os.getcwd())+”\screenshots\\”+text_account_reg.png”
-
-Importance of Logging
-----------------------
+Importance of Logging:
+-----------------------
 1. Every application keeps a log file.
 2. All actions performed in the application are recorded in this log file.
 3. By looking at the log file, we can understand what the user is doing, especially in banking and financial apps.
@@ -146,10 +143,7 @@ the issue.
 5. In automation frameworks, logs are important because we often run many test cases at once. While we work on other tasks,
 the log file helps us track the status of these tests (like warnings, failures, or passes). This way, we can see what each
 automated test case is doing.
-
-6. levels of logs
--------------------
-Warn>Debug>info>error>fatal
+6. Levels of logs ==> Warn>Debug>info>error>fatal
 
 How to open Report in a browser?
 ---------------------------------
@@ -167,19 +161,18 @@ Creating LoginPage
 
 Test Data
 ----------
-
-baseurl = https://tutorialsninja.com/demo/index.php?route=common/home
-email = test@example.com
-password = abcxyz
-
-
-Email: abcxyz@example.com
-password: abcxyz
+    i. baseurl = https://tutorialsninja.com/demo/index.php?route=common/home
+    ii. email = test@example.com
+    iii. password = abcxyz
 
 
-Code to Run TCs located in the TC Package
+    Email: abcxyz@example.com
+    password: abcxyz
+
+
+Codes to Run TCs located in the TC Package
 ------------------------------------------
-Code to use when testing all the Test Cases in the Test Cases Package is =>  pytest -s -v --browser chrome testCases/
+Code to use when testing all the Test Cases in the Test Case Package is =>  pytest -s -v --browser chrome testCases/
 
 NB:
 ---
@@ -187,7 +180,7 @@ NB:
 - It should be pass in the Test Cases files
 
 To Run Different Types of Testing or Group Run, Codes to use in Terminal;
-------------------------------------------------------------
+--------------------------------------------------------------------------
 1. pytest -s -v -m "sanity" --browser chrome testCases
 2. pytest -s -v -m "sanity and regression and smoke" --browser chrome testCases
 3. pytest -s -v -m "sanity or regression" --browser chrome testCases
@@ -420,5 +413,9 @@ Agent Pools When Setting up Environments
 5. You have to create an environment
 6. After adding the the environment set-up fixture
 7. Run it with this cmd ==>  pytest -s -v -m "sanity" testCases\
+
+HOOK
+-----
+Sometimes frameworks have a hook in py files to auto-install or update requirements before tests run.
 
 
