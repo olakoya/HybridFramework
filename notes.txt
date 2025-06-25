@@ -190,26 +190,28 @@ To Run Different Types of Testing or Group Run, Codes to use in Terminal;
     test_003_login_ddt.py ==> Smoke and, can be the combination of the 3 types of testing
 
 Selenium Hydrid Framework - 5
------------------------------
-As discussed from the above that in the Development of a Framework there are many approach and they are;
-- Multiple Phase in the design and development of framework are:
+------------------------------
+As discussed from the above that in the Development of a Framework, there are many approach and these are Multiple Phases
+in the design and development of framework:
     1. Analysis: What kind of application,how many pages are there,what are test cases to be automated.
 	2. Design & implementation: Design the framework from the scratch.
 
-We cannot automate all in one or two days its a continuous process it will go on 1 month or 2 month based on project
-complexity and number of test cases.As soon as we added all the test cases once we have done our project normally we will
-run our test cases on local machine everything is working fine.But practically we will able to write our test cases in
+We cannot automate all in one or two days its a continuous process it will go on for 1 month or 2 months based on project
+complexity and number of test cases. As soon as we added all the test cases and once we have done our project normally we will
+run our test cases on local machine to see everything is working fine. However, practically we are able to write our test cases in
 remote environments.
 
     3. Execution: We should execute our test cases out of pycharm because pycharm has internal configuration created in
-    virtual environments but remote environments do not.so we have to run in remote environments also. Before this we should
-    our tests without pycharm in local environment first  using command prompt and that should be successful.
+    virtual environments but remote environments do not. Therefore, we have to run in remote environments also. Before this, we should
+    conduct our tests without pycharm in local environment first using command prompt and that would be a success too.
     4. Maintenance: Git , GitHub, Jenkins
 
 STEPS FOR CODES REPOSITORY
 ---------------------------
-1. GitHub Link: https://github.com/olakoya/HybridFramework.git
-2. git remote add origin "https://github.com/olakoya/HybridFramework.git"
+GitHub Link: https://github.com/olakoya/HybridFramework.git
+- git add .
+- git commit -m 'updates'
+- git remote add origin "https://github.com/olakoya/HybridFramework.git"
 
 Running Test in Command Prompt and run.bat file
 ------------------------------------------------
@@ -222,12 +224,12 @@ Pip install pytest-ordering
 Pip install openpyxl
 Pip install allure-pytest
 
-2. For run.bat file contains:
+2. To run .bat file, cmd to use is:
 pytest -s -v -m "sanity" --browser chrome testCases
 
-Master is the branch where working code is available
+Master is the branch when working code is available
 
-Another branch will be created when an amendment is made and when a Code Review is required
+Another branch will be created when an amendment is needed, made and when a Code Review is required
 
 And that's when a Main branch is changed to Master branch
 
