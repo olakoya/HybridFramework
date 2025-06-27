@@ -260,14 +260,14 @@ Jenkins is a Java Based application ==> Java installed
 Running with Java 11 from /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home, which is older than the minimum required version (Java 17).
 Supported Java versions are: [17, 21]
 See https://jenkins.io/redirect/java-support/ for more information.
-8. Because the current version of java doesn't support jenkins as stated in the ouput above, then one needs to upgrade java
+8. Because the current version of java doesn't support jenkins as stated in the output above, then one needs to upgrade java
 9. Command to use to upgrade java is ==> java -jar jenkins.war --enable-future-java
 See: https://docs.brew.sh/Homebrew-and-Python
 ==> azure-cli
 zsh completions have been installed to:
   /usr/local/share/zsh/site-functions
 10. After updating your Java to the accurate version that works for Jenkins
-11. Then repeat the Commands to run jenkins is ==> java -jar jenkins.war
+11. Then repeat the steps and the Commands to run jenkins is ==> java -jar jenkins.war
 12. After installation and you seeing "hudson.lifecycle.Lifecycle#onReady: Jenkins is fully up and running" written on terminal
 13. Go to your browser and type localhost:8080 (this is the default host where jenkins run) on search engine but localhost:4444 is port number
 14. Jenkins page is loaded and this "/Users/olakoya/.jenkins/secrets/initialAdminPassword" is displayed prompting administration password to be entered
@@ -278,7 +278,7 @@ zsh completions have been installed to:
 19. Jenkins homepage is displayed and then click on 'Manage Jenkins' at the left bar options
 20. If you need extra tool to install, click on Plugins - search the tool name like 'Maven' if you use Java and then click install
 21. Because Jenkins is Java base application which means it's a Java file
-22. Go back to Mnaage Jenkins and click on Tools and scroll down to JDK Installations
+22. Go back to Manage Jenkins and click on Tools and scroll down to JDK Installations
 23. Click on JDK installations 'Add JDK' button, give name 'Java Home' and click on check box to install automatically
 24. Repeat the same for Git Installations
 25. Scroll to the bottom page and click on 'Apply' then 'Save'
@@ -302,11 +302,29 @@ zsh completions have been installed to:
 
 2 Things to take Notes:
 ------------------------
-1. Before deployment ==> Automatically tests are executed
+1. Before deployment ==> Tests are executed Automatically
 2. DG ==> Branch ==> execute in Jenkins by selecting your branch ==> PR ==> Master branch
+- DG likely stands for Development Gateway or Development Group — but most commonly, teams use it as shorthand for Development Git or Dev Group branch.
+- In practice: This means your feature branch or development branch — basically, where developers do their work.
+- Example: DG/feature-login might be a developer’s working branch.
 
-How To Run and Open Jenkins Job from Terminal and Browser the Following Day?
--------------------------------------------------------------------------
+Meaning of DG ==> Branch ==> execute in Jenkins by selecting your branch ==> PR ==> Master branch:
+----------------------------------------------------------------------------------------------------
+It really means:
+
+1. DG → Developer creates a feature branch off main or develop
+
+2. Branch → You push your work to that feature branch
+
+3. Jenkins → You run tests/builds by selecting that branch in Jenkins
+
+4. PR → You make a Pull Request (PR) from your feature branch into master (or main)
+
+5. Master → When PR is approved and tests pass, the branch is merged into the main production branch.
+
+
+How To Run and Open Jenkins Job from Terminal and Localhost Browser the Following Day?
+---------------------------------------------------------------------------------------
 1. Cmdline to install again via Homebrew on MacOS ==> brew install jenkins-lts
     - To make a java run automatically for future execution, use commandline:
     - i. java -jar jenkins.war
@@ -357,7 +375,7 @@ To stop Jenkins running from the terminal, depends on how Jenkins method was sta
 - Find the Jenkins process:==> ps aux | grep jenkins
 - Identify the correct PID (Process ID), then kill it:==> kill -9 <PID>
 
-Selenium Hybrid Framework - 7 Remote Execution Via *Selenium Grid* 11/06/25
+Selenium Hybrid Framework - 7 Remote Execution Via Selenium Grid 11/06/25
 ---------------------------------------------------------------------------
 1. To open terminal from the folder where the selenium server version is located
 2. Type this cmd in the terminal ==> java -jar selenium-server-4.31.0.jar standalone
@@ -365,20 +383,20 @@ Selenium Hybrid Framework - 7 Remote Execution Via *Selenium Grid* 11/06/25
 4. The Selenium Grid page is loaded
 5. God to pycharm terminal
 
-1st webpage ==> https://tutorialsninja.com/demo/index.php?route=common/home
-2nd webpage ==> https://naveenautomationlabs.com/opencart/index.php?route=common/home
+1st url test data / webpage ==> https://tutorialsninja.com/demo/index.php?route=common/home
+2nd url test data / webpage ==> https://naveenautomationlabs.com/opencart/index.php?route=common/home
 
 
 Types of Execution:
 --------------------
 1. Sequential Mode ==> pytest -s -v --browser chrome --os mac testCases/
-2. Parallel Mode (number test cases to be executed in parallel) in this case it's 2==> pytest -s -v -m "sanity" -n=2 testCases/
+2. Parallel Mode (number of test cases to be executed in parallel) in this case there are 2 TCs ==> pytest -s -v -m "sanity" -n=2 testCases/
 - 1. Login
 - 2 Account Registration
 
 How to Run both Jenkins and Selenium Grid Together in Parallel 12/06/25:
 --------------------------------------------------------------------------
-1. To execute in Jenkins, firstly, I need to commit the changes in github
+1. To execute in Jenkins, firstly, I need to commit the changes on framework ie remote work in github
 2. Then open another terminal to start jenkins (java -jar jenkins.war ) to run while selenium grid runs parallel to it making 2 terminals running
 3. To check for execution Pass or Fail report, follow the link that looks like the one below given in jenkins output display on console
 ==> - Generated html report: file:///Users/olakoya/.jenkins/workspace/HybridFramework/reports/12-06-2025%2019-50-42.html -
@@ -388,10 +406,10 @@ Remote Execution via Docker 13/06/2025:
 1. Create your docker-compose.yaml file on pycharm
 2. Run Jenkins from remote terminal
 3. Open docker desktop
-4. Enter cmdline to clean old containers ==>  docker-compose down
+4. In framework terminal enter cmdline to clean old containers ==>  docker-compose down
 5. Enter cmdline in pycharm framework to run new containers ==>  docker-compose up --build
 6. Then go to browser http://localhost:4444/ui/# to check that selenium grid is up and running
-7. On homepage click "Overview" to see the platforms that are running
+7. On homepage click "Overview" to see the platforms/processes that are running
 8. Enter cmdline to execute ==> pytest -s -v -m "sanity" --browser chrome testCases
 9. During execution go to selenium grid page, click on session to view the above docker execution
 10. The node only has one process to execute i.e only 1 test Cases at a time
@@ -399,21 +417,21 @@ Remote Execution via Docker 13/06/2025:
 
 Agent Pools When Setting up Environments
 -----------------------------------------
-1.Already packages are installed and automate it, and this is maintained by QA team
-2.Or install packages first in requirements.txt by using this cmd
+1.Already packages are installed and automated, and this is maintained by QA team
+2.In case they aren't installed yet, one would have to firstly install it in requirements.txt by using this cmd
     ==> pip install -r requirements.txt
     - Should incase docker isn't running yet, Open your Docker desktop
-    - Go to the pythonproject folder in terminal
-    - Enter cmd line to start grid ==> java -jar selenium-server-4.31.0.jar standalone
-    - Go to web browser and paste this url to get selenium grid running==> http://localhost:4444/ui/#
-    - Go back to pycharm framework and enter ==> docker ps => to check that Selenium Grid is spin up
+    - Go to the pythonproject folder in terminal, right click and select 'open in terminal' option
+    - In terminal enter cmd line to start grid ==> java -jar selenium-server-4.31.0.jar standalone
+    - Go to web browser and paste this url ==> http://localhost:4444/ui/# to get selenium grid running
+    - Go back to pycharm framework and enter ==> docker ps => in terminal to check that Selenium Grid is spin up
     - Next enter cmdline ==>  docker-compose up -d
     - Then ==> docker ps
-3. With the help of Jenkins pipelines I will execute into the machine
+3. With the help of Jenkins pipelines features are executed inside the machine
 4. To execute with docker, you need to issue it with this command
     ==> docker-compose up
 5. You have to create an environment
-6. After adding the the environment set-up fixture
+6. After adding the environment, set-up fixture
 7. Run it with this cmd ==>  pytest -s -v -m "sanity" testCases\
 
 HOOK
