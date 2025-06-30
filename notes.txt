@@ -437,5 +437,7 @@ Agent Pools When Setting up Environments
 HOOK
 -----
 Sometimes frameworks have a hook in py files to auto-install or update requirements before tests run.
+Sometimes frameworks have a hook in py files to auto-install or update requirements before tests run.
+Sometimes frameworks have a hook in py files to auto-install or update requirements before tests run.
 
 
